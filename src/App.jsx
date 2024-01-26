@@ -1,12 +1,11 @@
+import Routess from "./Routes";
 
 function App() {
-
-
   return (
     <>
-   Hello World
+      <Routess />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
