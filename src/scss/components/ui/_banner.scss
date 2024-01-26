@@ -1,0 +1,22 @@
+.banner {
+  // background-image: url(../../../assets/user/home/banner.svg);
+  background-color: yellow;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 6.5rem;
+    border-radius: 0.8rem;
+    &-content {
+      & > h3 {
+        font-size: 3.6rem;
+        font-weight: 700;
+      }
+      & > h6 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 1.4rem;
+      }
+    }
+  }
+}

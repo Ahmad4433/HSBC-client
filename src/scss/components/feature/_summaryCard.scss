@@ -1,0 +1,48 @@
+@import "../../variable";
+
+.summaryCard {
+  box-shadow: 0px 1px 8px 0px rgba(110, 110, 110, 0.1);
+  border-radius: 1.6rem;
+  &_container {
+    padding: 3rem;
+    &-content {
+      & > h3 {
+        font-size: 3.2rem;
+        font-weight: 800;
+        color: $green_light;
+        margin-top: 6rem;
+      }
+      & > h5 {
+        color: #414d55;
+        font-size: 1.7rem;
+        font-weight: 700;
+      }
+      & > p {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      &-profile {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0rem;
+        & > img {
+          height: 4rem;
+          width: 4rem;
+          border-radius: 8px;
+          margin-right: 2rem;
+        }
+        &-name {
+          h6 {
+            color: $blue;
+            font-size: 1.4rem;
+            font-weight: 700;
+          }
+          p {
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

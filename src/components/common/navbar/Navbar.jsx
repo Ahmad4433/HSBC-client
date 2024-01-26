@@ -16,24 +16,26 @@ const Navbar = () => {
   return (
     <>
       <Container className="main">
-        <div className="navbar">
-          <div className="navbar-container">
-            <div className="navbar-container-logo">
-              <img src={logo} alt="logo" />
-            </div>
-            <div className="navbar-container-menus">
-              <NavbarItem icon={news} text="News" />
-              <NavbarItem icon={accounts} text="Accounts" />
-              <NavbarItem icon={investment} text="Investments" />
-              <NavbarItem icon={stock} text="Stock Exchange" />
-            </div>
-            <div className="navbar-container-profile">
-              <img src={bell} alt="icon" />
-              <img src={mail} alt="icon" />
-              <img src={profile} alt="icon" />
+        <Container className="margins">
+          <div className="navbar">
+            <div className="navbar-container">
+              <div className="navbar-container-logo">
+                <img src={logo} alt="logo" />
+              </div>
+              <div className="navbar-container-menus">
+                <NavbarItem icon={news} text="News" />
+                <NavbarItem icon={accounts} text="Accounts" />
+                <NavbarItem icon={investment} text="Investments" />
+                <NavbarItem icon={stock} text="Stock Exchange" />
+              </div>
+              <div className="navbar-container-profile">
+                <img src={bell} alt="icon" />
+                <img src={mail} alt="icon" />
+                <img src={profile} alt="icon" />
+              </div>
             </div>
           </div>
-        </div>
+        </Container>
       </Container>
     </>
   );

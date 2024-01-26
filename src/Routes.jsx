@@ -1,18 +1,28 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Navbar } from "./components/common";
 import ScrollToTop from "./ScrollTopTop";
+
+// Components ( Common )
+import { Navbar } from "./components/common";
+
+// Layouts
+import { UserLayout } from "./layout";
+
+// User Modules
+import { Home } from "./modules/user";
 
 const Routess = () => {
   return (
     <>
       <Router>
         <ScrollToTop />
-        <Navbar />
         <Routes>
           {/* User */}
 
           {/* <Route path="/" element={<Home />} /> */}
+          <Route path="" element={<UserLayout />}>
+            <Route path="/" element={<Home />} />
+          </Route>
 
           {/* Admin */}
           {/* No result found */}

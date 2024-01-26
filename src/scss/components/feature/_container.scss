@@ -30,7 +30,7 @@
   }
   // for margins from left and right
   &-margins {
-    padding: 0rem 11.2rem;
+    padding: 0rem 12rem;
     @include respond(tab-port) {
       padding: 0rem 4rem;
     }
