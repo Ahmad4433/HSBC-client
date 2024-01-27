@@ -11,6 +11,7 @@ import {
 } from "../../../assets/user/navbar";
 import NavbarItem from "./NavbarItem";
 import { Container } from "../../features";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,7 +21,9 @@ const Navbar = () => {
           <div className="navbar">
             <div className="navbar-container">
               <div className="navbar-container-logo">
-                <img src={logo} alt="logo" />
+                <Link to="/">
+                  <img src={logo} alt="logo" />
+                </Link>
               </div>
               <div className="navbar-container-menus">
                 <NavbarItem icon={news} text="News" />
@@ -31,7 +34,9 @@ const Navbar = () => {
               <div className="navbar-container-profile">
                 <img src={bell} alt="icon" />
                 <img src={mail} alt="icon" />
-                <img src={profile} alt="icon" />
+                <Link to="/user-profile">
+                  <img src={profile} alt="icon" />
+                </Link>
               </div>
             </div>
           </div>

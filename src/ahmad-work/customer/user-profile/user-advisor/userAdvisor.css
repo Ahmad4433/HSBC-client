@@ -1,0 +1,113 @@
+.user-advisor-main{
+    background-color: white;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 1rem 0;
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.2);
+
+}
+
+.user-advisor{
+    display: flex;
+    flex-direction: column;
+  gap: 2.4rem;
+    align-items: center;
+}
+
+
+.advisor-pic-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advisor-picture{
+height: 112px;
+width: 112px;
+border-radius: 8px;
+object-fit: cover;
+object-position: top;
+}
+
+.advisor-name{
+    font-size: 3.2rem;
+    color: #28B5E1;
+    font-weight: 600;
+}
+
+.advisor-call-parent{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.advisor-num{
+    font-size: 1.6rem;
+    
+}
+
+.call-icon{
+    font-size: 1.7rem;
+
+}
+
+
+
+.advisor-desp{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.8;
+    
+}
+
+.advidor-manag{
+    color: #FF002E;
+    font-size: 1.6rem;
+    font-weight: 600;
+ 
+}
+
+.advisor-action{
+    background-color:#ff002e;
+    display: flex;
+    gap: 0.7rem;
+    padding: 1rem 2rem;
+align-items: center;
+color: white;
+border-radius: 4px;
+
+}
+
+
+.advisor-add{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.add-icon{
+    font-size: 1.6rem;
+}
+
+.advisor-bottom{
+    background-color: black;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+top: 2rem;   
+}
+
+.advisor-actions{
+    display: flex;
+    align-items: center;
+gap: 1.8rem;
+}
+
+.add-action{
+    padding: 1rem 2.8rem;
+}

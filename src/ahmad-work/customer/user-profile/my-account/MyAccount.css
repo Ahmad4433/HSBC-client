@@ -1,0 +1,107 @@
+
+
+.user-myaccount-main{
+    display: flex;
+    align-items: flex-start;   
+    flex-direction: column;
+    max-width: 100%;
+    display: block;
+    padding: 2rem 3rem;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.2);
+}
+
+.user-account-booklet{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border: 1px solid #979797;
+    border-radius: 12px;
+    padding-bottom: 4rem;
+
+}
+
+.user-account-booklet div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.6rem 1rem;
+    max-width: 100%;
+    margin-bottom: 0.2rem;
+    
+}
+
+
+
+
+.user-account-booklet div:hover{
+    cursor: pointer;
+    background-color:#111827;
+    color: white;
+    
+}
+
+.user-account-booklet div:hover .user-account-icon{
+    color: white;
+}
+
+.user-account-icon{
+    font-size: 1.6rem;
+    color: #595959;
+}
+
+.user-account-booklet div p{
+    font-family: 'Plus Jakarta sans';
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.user-account-title{text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+
+}
+.user-bootlet-title{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+
+}
+
+
+
+.user-create-account-action{
+    background-color: #d2ffd7;
+    max-width: 100%;
+    padding: 1rem 3rem;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.user-create-account-action:hover{
+    cursor: pointer;
+}
+
+.user-create-new-account{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.plus-icon{
+    font-size: 12.5px;
+}
+
+

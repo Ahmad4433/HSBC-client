@@ -2,8 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./ScrollTopTop";
 
+// user profile
+import UserProfile from "./ahmad-work/customer/user-profile/UserProfile";
+
 // Components ( Common )
-import { Navbar } from "./components/common";
 
 // Layouts
 import { UserLayout } from "./layout";
@@ -22,6 +24,7 @@ const Routess = () => {
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="" element={<UserLayout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/user-profile" element={<UserProfile />} />
           </Route>
 
           {/* Admin */}

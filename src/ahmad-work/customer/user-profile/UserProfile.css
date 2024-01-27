@@ -1,0 +1,27 @@
+
+.bg{
+    background-image: url('../../assets/background.jpg');
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.user-profile-main{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 2fr;
+     gap: 2rem;
+
+    padding: 4rem 2rem;
+    max-width: 100%;
+    width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+
+
+@media(max-width:756px){
+    .user-profile-main{
+    grid-template-columns: 1fr;
+    }
+}
