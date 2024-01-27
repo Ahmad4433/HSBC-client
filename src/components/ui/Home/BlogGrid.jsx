@@ -2,16 +2,14 @@ import React from "react";
 import { Heading } from "../../common";
 import { BlogCard, Grid } from "../../features";
 import { investments } from "../../../assets/user/home";
+import { four, one, three, two } from "../../../assets/user/blogs";
 
 const BlogGrid = () => {
   return (
     <>
-      <Heading
-        icon={true}
-        iconPath={investments}
-        text="Our Advantageous Investments!"
-        className="primary"
-      />
+      <Heading icon={true} iconPath={investments} className="primary">
+        Our Advantageous Investments!
+      </Heading>
       <div className="bloggrid">
         <Grid className="grid-4">
           <BlogCard
@@ -24,8 +22,9 @@ const BlogGrid = () => {
             amount="280.00"
             text="You want to establish financial security and plan for possible future hauls. This fund allows you yo save money will be compltely safe and to benefit"
             to="/"
+            image={one}
           />
-            <BlogCard
+          <BlogCard
             date="12/02/22"
             heading="Popular Booklet - 6.90% net"
             performaceText="Guarranteed Performance"
@@ -35,8 +34,9 @@ const BlogGrid = () => {
             amount="280.00"
             text="You want to establish financial security and plan for possible future hauls. This fund allows you yo save money will be compltely safe and to benefit"
             to="/"
+            image={two}
           />
-            <BlogCard
+          <BlogCard
             date="12/02/22"
             heading="Popular Booklet - 6.90% net"
             performaceText="Guarranteed Performance"
@@ -46,8 +46,9 @@ const BlogGrid = () => {
             amount="280.00"
             text="You want to establish financial security and plan for possible future hauls. This fund allows you yo save money will be compltely safe and to benefit"
             to="/"
+            image={three}
           />
-            <BlogCard
+          <BlogCard
             date="12/02/22"
             heading="Popular Booklet - 6.90% net"
             performaceText="Guarranteed Performance"
@@ -57,6 +58,7 @@ const BlogGrid = () => {
             amount="280.00"
             text="You want to establish financial security and plan for possible future hauls. This fund allows you yo save money will be compltely safe and to benefit"
             to="/"
+            image={four}
           />
         </Grid>
       </div>

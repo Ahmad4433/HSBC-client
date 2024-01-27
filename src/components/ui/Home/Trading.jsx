@@ -6,12 +6,9 @@ import { Grid, TradeValues } from "../../features";
 const Trading = () => {
   return (
     <>
-      <Heading
-        icon={true}
-        iconPath={trading}
-        text="Trading"
-        className="primary"
-      />
+      <Heading icon={true} iconPath={trading} className="primary">
+        Trading
+      </Heading>
 
       <div className="trade_section">
         <div className="trade_section-container">

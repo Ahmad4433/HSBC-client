@@ -1,11 +1,12 @@
 import React from "react";
 import { logo } from "../../../assets/user/navbar";
+import { banner } from "../../../assets/user/home";
 
 const Banner = () => {
   return (
     <>
-      <div className="backgroundImage">
-        <div className="banner">
+      <div className="banner_main">
+        <div className="banner" style={{ backgroundImage: `url(${banner})` }}>
           <div className="banner-container">
             <div className="banner-container-content">
               <h3>Welcome Dear HSBC</h3>

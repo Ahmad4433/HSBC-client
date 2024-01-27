@@ -8,12 +8,9 @@ import { Heading } from "../../common";
 const Summary = () => {
   return (
     <>
-      <Heading
-        icon={true}
-        iconPath={summary}
-        text="Summary"
-        className="primary"
-      />
+      <Heading icon={true} iconPath={summary} className="primary">
+        Summary
+      </Heading>
 
       <div className="summary">
         <div className="summary_container">

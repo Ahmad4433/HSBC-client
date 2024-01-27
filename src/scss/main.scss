@@ -15,13 +15,17 @@
 @import "./components/feature/container";
 @import "./components/feature/grid";
 @import "./components/feature/summaryCard";
-@import "./components/feature/tradeValues.scss";
+@import "./components/feature/tradeValues";
+@import "./components/feature/blogCard";
 
 // common
 @import "./components/common/navbar";
 @import "./components/common/heading";
+@import "./components/common/linkBtn";
+@import "./components/common/footer";
 
 // ui
 @import "./components/ui/banner";
 @import "./components/ui/summary";
 @import "./components/ui/trading";
+@import "./components/ui/news";

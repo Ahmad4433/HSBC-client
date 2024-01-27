@@ -1,7 +1,6 @@
 import React from "react";
-import { Banner, Summary, Trading } from "../../components/ui";
+import { Banner, Summary, Trading, BlogGrid, News } from "../../components/ui";
 import { Container } from "../../components/features";
-import BlogGrid from "../../components/ui/Home/BlogGrid";
 
 const Home = () => {
   return (
@@ -9,6 +8,7 @@ const Home = () => {
       <div className="bg_gray">
         <Container className="main">
           <Container className="margins">
+            
             {/* Banner */}
             <Banner />
 
@@ -20,6 +20,10 @@ const Home = () => {
 
             {/* Blog Grid Section */}
             <BlogGrid />
+
+            {/* News */}
+            <News />
+
 
 
 

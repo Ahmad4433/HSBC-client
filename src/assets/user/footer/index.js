@@ -1,0 +1,12 @@
+export { default as address } from "./address.svg";
+export { default as facebook } from "./facebook.svg";
+export { default as fax } from "./fax.svg";
+export { default as footerLogo } from "./footerLogo.svg";
+export { default as googleplus } from "./googleplus.svg";
+export { default as instagram } from "./instagram.svg";
+export { default as linkedin } from "./linkedin.svg";
+export { default as phone } from "./phone.svg";
+export { default as pinterest } from "./pinterest.svg";
+export { default as rss } from "./rss.svg";
+export { default as twitter } from "./twitter.svg";
+export { default as youtube } from "./youtube.svg";
