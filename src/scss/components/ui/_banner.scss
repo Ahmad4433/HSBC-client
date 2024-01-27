@@ -1,6 +1,6 @@
 .banner {
-  // background-image: url(../../../assets/user/home/banner.svg);
-  background-color: yellow;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   &-container {
     display: flex;
     align-items: center;
@@ -19,4 +19,7 @@
       }
     }
   }
+}
+.backgroundImage {
+  background-image: url("./ui/banner.svg");
 }

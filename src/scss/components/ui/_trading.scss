@@ -1,0 +1,15 @@
+.trade_section {
+  padding: 3rem 10rem;
+  background-color: white;
+  border-radius: 1.6rem;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    & > h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin-right: 12rem;
+    }
+  }
+}

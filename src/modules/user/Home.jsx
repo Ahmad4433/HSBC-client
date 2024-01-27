@@ -1,6 +1,7 @@
 import React from "react";
 import { Banner, Summary, Trading } from "../../components/ui";
 import { Container } from "../../components/features";
+import BlogGrid from "../../components/ui/Home/BlogGrid";
 
 const Home = () => {
   return (
@@ -17,10 +18,11 @@ const Home = () => {
             {/* Trading Section */}
             <Trading />
 
+            {/* Blog Grid Section */}
+            <BlogGrid />
 
 
 
-            
           </Container>
         </Container>
       </div>
