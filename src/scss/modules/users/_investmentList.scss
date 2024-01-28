@@ -1,0 +1,50 @@
+@import "../../variable";
+
+.investmentlist {
+  padding-top: 4.4rem;
+  padding-bottom: 10rem;
+  &-header {
+    & > h2 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    & > p {
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin-top: 1.9rem;
+      margin-bottom: 3.4rem;
+    }
+  }
+
+  // container
+  &-container {
+    padding: 3.4rem 6.5rem;
+    border-radius: 2rem;
+    background: white;
+    &-toggle {
+      & > button {
+        border: 1px solid #595959;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        padding: 2.9rem 0rem;
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: #595959;
+        background-color: white;
+        &:hover {
+          background-color: rgba(255, 0, 0, 0.688);
+          color: white;
+        }
+      }
+      & > * {
+        width: 50%;
+        &:first-child {
+          border-radius: 20px 0px 0px 20px;
+        }
+        &:last-child {
+          border-radius: 0px 20px 20px 0px;
+        }
+      }
+    }
+  }
+}

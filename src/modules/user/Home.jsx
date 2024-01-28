@@ -5,31 +5,20 @@ import { Container } from "../../components/features";
 const Home = () => {
   return (
     <>
-      <div className="bg_gray">
-        <Container className="main">
-          <Container className="margins">
-            
-            {/* Banner */}
-            <Banner />
+      {/* Banner */}
+      <Banner />
 
-            {/* Summary Section */}
-            <Summary />
+      {/* Summary Section */}
+      <Summary />
 
-            {/* Trading Section */}
-            <Trading />
+      {/* Trading Section */}
+      <Trading />
 
-            {/* Blog Grid Section */}
-            <BlogGrid />
+      {/* Blog Grid Section */}
+      <BlogGrid />
 
-            {/* News */}
-            <News />
-
-
-
-
-          </Container>
-        </Container>
-      </div>
+      {/* News */}
+      <News />
     </>
   );
 };
