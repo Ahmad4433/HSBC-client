@@ -1,0 +1,30 @@
+.personalInformation {
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5rem 0rem;
+    & > div {
+      & > h1 {
+        font-size: 3.6rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      & > p {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+    }
+    & > * {
+      &:last-child {
+        display: flex;
+        align-items: center;
+        & > * {
+          &:first-child {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

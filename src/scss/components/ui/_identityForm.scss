@@ -1,0 +1,31 @@
+.identityForm {
+  background-color: white;
+  border: 1px solid #979797;
+  border-radius: 2rem;
+  &-container {
+    padding: 2.5rem 5.2rem;
+    & > center {
+      & > h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    &-form {
+      &-feilds {
+        & > div {
+          margin-bottom: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          & > * {
+            &:first-child {
+              margin-right: 4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

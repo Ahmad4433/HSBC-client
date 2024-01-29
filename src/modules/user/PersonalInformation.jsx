@@ -1,7 +1,7 @@
 import React from "react";
-import { IdentityForm } from "../../components/ui";
+import { IdentityForm, ResetPassword } from "../../components/ui";
 import { Button } from "../../components/common";
-import { CiEdit } from "react-icons/ci";
+import { RiEditLine } from "react-icons/ri";
 import { PiArrowFatRightThin } from "react-icons/pi";
 
 const PersonalInformation = () => {
@@ -14,21 +14,21 @@ const PersonalInformation = () => {
             <p>Complete the information Request in the block blow</p>
           </div>
           <div>
-            <Button>
+            <Button className="secondry">
               Edit
-              <CiEdit />
+              <RiEditLine />
             </Button>
-            <Button>
+            <Button className="secondry--light">
               Next
               <PiArrowFatRightThin />
             </Button>
           </div>
         </div>
 
-        
         {/* Other Components */}
         <div className="personalInformation-container">
           <IdentityForm />
+          <ResetPassword />
         </div>
       </div>
     </>

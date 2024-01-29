@@ -1,16 +1,18 @@
 .forminput-container {
-  margin-bottom: 1.8rem;
+  margin-bottom: 4.8rem;
   width: 100%;
   position: relative;
 
   & > label {
     display: block;
   }
-  & > div {
-    color: red;
-    position: absolute;
-  }
 
+  & > * {
+    &:last-child {
+      color: red;
+      position: absolute;
+    }
+  }
   &_primary {
     & > label {
       font-size: 1.2rem;
@@ -18,23 +20,73 @@
       color: #696d6e;
       margin-bottom: 0.2rem;
     }
-    & > input {
-      border-radius: 8px;
-      border: 1px solid #d1e2ea;
-      background: #f4f8fa;
-      padding-top: 0.8rem;
-      padding-bottom: 0.8rem;
-      padding-left: 1.3rem;
-      color: #696d6e;
+    &-field {
       width: 100%;
+      & > input {
+        border-radius: 8px;
+        border: 1px solid #d1e2ea;
+        background: #f4f8fa;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.3rem;
+        color: #696d6e;
+        width: 100%;
 
-      &:focus {
-        outline: none;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  // Secondry
+
+  &_secondry {
+    & > label {
+      color: #595959;
+      font-size: 1.6rem;
+      font-style: normal;
+      margin-bottom: 0.8rem;
+      font-weight: 500;
+    }
+    &-field {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      & > * {
+        &:first-child {
+          font-size: 2rem;
+          margin-right: -2.5rem;
+          margin-bottom: 0.5rem;
+          color: #707073;
+        }
+      }
+      & > input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #97979a;
+        width: 100%;
+        color: #707073;
+        font-weight: 500;
+        font-size: 1.6rem;
+        padding-left: 3rem;
+        padding-bottom: 0.5rem;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
       }
     }
   }
 }
 
-#is-invalid {
+#primary-is-invalid {
   border: 1px solid red;
+}
+
+#secondry-is-invalid {
+  border-bottom: 2px solid red;
 }
