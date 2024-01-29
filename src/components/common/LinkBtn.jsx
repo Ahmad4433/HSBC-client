@@ -5,7 +5,7 @@ const LinkBtn = (props) => {
   return (
     <>
       <div className={`link link_${props.className}`}>
-        <Link to={`${props.to}`}>
+        <Link to={`${props.to}`} id={props.id}>
           {props.icon && <img src={props.iconPath} alt="icon" />}
           {props.children}
         </Link>

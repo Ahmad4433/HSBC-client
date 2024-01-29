@@ -1,0 +1,33 @@
+.profitSimulator {
+  & > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  & > p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #878790;
+    margin-top: 1.8rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &-dropdown {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26rem;
+    border: 1px solid #878790;
+    padding: 0.9rem 1.6rem;
+    & > * {
+      color: #878790;
+      &:last-child {
+        font-size: 2rem;
+      }
+    }
+    & > p {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+}

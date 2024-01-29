@@ -11,7 +11,8 @@ import UserProfile from "./ahmad-work/customer/user-profile/UserProfile";
 import { UserLayout } from "./layout";
 
 // User Modules
-import { Home, InvestmentList } from "./modules/user";
+import { Home, InvestmentAccount, InvestmentList } from "./modules/user";
+import PersonalInformation from "./modules/user/PersonalInformation";
 
 const Routess = () => {
   return (
@@ -25,6 +26,9 @@ const Routess = () => {
           <Route path="" element={<UserLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/investment-list" element={<InvestmentList />} />
+            <Route path="/investment-account" element={<InvestmentAccount />} />
+            <Route path="/edit-info" element={<PersonalInformation />} />
+
             {/* Ahmad Routes */}
             <Route path="/user-profile" element={<UserProfile />} />
           </Route>

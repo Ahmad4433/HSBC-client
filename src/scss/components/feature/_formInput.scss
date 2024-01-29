@@ -1,0 +1,40 @@
+.forminput-container {
+  margin-bottom: 1.8rem;
+  width: 100%;
+  position: relative;
+
+  & > label {
+    display: block;
+  }
+  & > div {
+    color: red;
+    position: absolute;
+  }
+
+  &_primary {
+    & > label {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #696d6e;
+      margin-bottom: 0.2rem;
+    }
+    & > input {
+      border-radius: 8px;
+      border: 1px solid #d1e2ea;
+      background: #f4f8fa;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      padding-left: 1.3rem;
+      color: #696d6e;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+#is-invalid {
+  border: 1px solid red;
+}

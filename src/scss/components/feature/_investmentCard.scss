@@ -1,0 +1,96 @@
+@import "../../variable";
+
+.investmentCard {
+  border: 1px solid #9197b3;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin: 3rem 0rem;
+  &-container {
+    display: flex;
+    align-items: center;
+    
+
+    &-img {
+      margin-right: 4rem;
+      & > img {
+        height: 266px;
+        width: 35rem;
+      }
+    }
+    &-content {
+      width: 100%;
+      margin-right: 4rem;
+      &-section {
+        &-header {
+          margin-bottom: 1.9rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          & > h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+          }
+          & > p {
+            color: #595959;
+            font-size: 1.4rem;
+            font-weight: 400;
+            border-radius: 200px;
+            border: 1px solid #595959;
+            padding: 1rem 1.5rem;
+          }
+        }
+
+        // values
+
+        &-values {
+          & > div {
+            & > div {
+              & > div {
+                display: flex;
+                align-items: center;
+                & > img {
+                  margin-right: 0.7rem;
+                }
+                & > p {
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: #595959;
+                }
+              }
+              & > h1 {
+                font-size: 2.1rem;
+                font-weight: 700;
+                color: $green_light;
+                margin-top: 1.2rem;
+                margin-bottom: 1.9rem;
+              }
+            }
+          }
+        }
+
+        // menus
+
+        &-menus {
+          margin-bottom: 2.8rem;
+          & > div {
+            & > div {
+              & > p {
+                font-size: 1.2rem;
+                font-weight: 700;
+              }
+              & > * {
+                &:first-child {
+                  color: #595959;
+                }
+                &:last-child {
+                  color: #d80027;
+                  margin-top: 0.7rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

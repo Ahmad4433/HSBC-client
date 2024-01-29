@@ -1,0 +1,25 @@
+@import "../../variable";
+
+.button {
+  & > button {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  &_primary {
+    & > button {
+      background-image: $blue_darkn;
+      color: white;
+      padding: 1.2rem 2.5rem;
+      border-radius: 0.8rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      border: 1px solid #0496ff;
+      &:hover {
+        background-image: none;
+        background-color: white;
+        color: #0496ff;
+      }
+    }
+  }
+}

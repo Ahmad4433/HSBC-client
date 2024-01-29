@@ -1,0 +1,36 @@
+.investAmount {
+  & > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4.5rem;
+    margin: 2.5rem 0rem;
+    border: 1px solid #9197b3;
+    border-radius: 0.9rem;
+    & > div {
+      text-align: center;
+      & > div {
+        display: flex;
+        align-items: center;
+        & > img {
+          margin-right: 0.7rem;
+        }
+        & > p {
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: #595959;
+        }
+      }
+      & > h1 {
+        font-size: 2.1rem;
+        font-weight: 700;
+        color: $green_light;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

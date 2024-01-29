@@ -17,19 +17,30 @@
 @import "./components/feature/summaryCard";
 @import "./components/feature/tradeValues";
 @import "./components/feature/blogCard";
+@import "./components/feature/investmentCard";
+@import "./components/feature/formInput";
+@import "./components/feature/formText";
 
 // common
 @import "./components/common/navbar";
 @import "./components/common/heading";
 @import "./components/common/linkBtn";
 @import "./components/common/footer";
+@import "./components/common/button";
 
 // ui
 @import "./components/ui/banner";
 @import "./components/ui/summary";
 @import "./components/ui/trading";
 @import "./components/ui/news";
+@import "./components/ui/parkingDetails";
+@import "./components/ui/investAmount";
+@import "./components/ui/profitSimulator";
+@import "./components/ui/mediaSection";
+@import "./components/ui/getSupport";
 
 // ////////////
 // Modules
-@import './modules/users/investmentList';
+@import "./modules/users/investmentList";
+@import "./modules/users/investmentAccount";
+@import './modules/users/personalInformation';
