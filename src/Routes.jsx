@@ -14,7 +14,8 @@ import InvestmentListAh from "./ahmad-work/customer/investmentAh-list/Investment
 import Exchange from "./ahmad-work/customer/echange-chart/Exchange";
 import Login from "./ahmad-work/customer/login/Login";
 import Table from "./ahmad-work/tables/Table"; 
- 
+import NewAcc from './ahmad-work/customer/create-account/NewAcc'
+
  //this is for test we will delete letter
 
 // all modules for user personal data

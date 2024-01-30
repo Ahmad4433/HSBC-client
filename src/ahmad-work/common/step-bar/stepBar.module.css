@@ -1,0 +1,71 @@
+
+.section{
+    background-color: white;
+    max-width: 300px;
+    width: 300px;
+        display: flex;
+        align-items: flex-start;
+        padding: 2rem 0;
+        border-right: 1px solid #ccc;
+ 
+
+}
+
+.bar{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-items: center;
+ 
+  
+}
+
+.round{
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    border: 1px solid #878790;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    
+    
+}
+
+.line{
+    min-height: 80px;
+    width: 1px;
+    background-color: #878790;
+    
+}
+
+
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap:3rem; 
+    margin-left: 2rem;
+    justify-content: flex-start;
+}
+
+.title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.message{
+    position: relative;
+    top: -2rem;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.fill{
+    background-color: red;
+    color: white;
+    border-color: red;
+}
