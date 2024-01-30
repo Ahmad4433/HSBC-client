@@ -44,7 +44,7 @@ const Routess = () => {
             <Route path="/edit-info" element={<PersonalInformation />} />
             <Route path="/bank-information" element={<BankInformation />} />
             <Route path="/baneficiaries" element={<BaneFiciaries />} />
-
+{/* new routes from ahmad */}
             {/* Ahmad Routes */}
             <Route path="/user-profile" element={<UserProfile />} />
             <Route path="/user-profile" element={<UserProfile />} />
