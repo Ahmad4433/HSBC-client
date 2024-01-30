@@ -9,6 +9,7 @@ import {
   profile,
   stock,
 } from "../../../assets/user/navbar";
+
 import NavbarItem from "./NavbarItem";
 import { Container } from "../../features";
 import { Link } from "react-router-dom";
@@ -46,8 +47,8 @@ const Navbar = () => {
               <div className="navbar-container-profile">
                 <img src={bell} alt="icon" />
                 <img src={mail} alt="icon" />
-                <Link to="/user-profile">
-                  <img src={profile} alt="icon" />
+                <Link to="/account/step2">
+                  <img   src={profile} alt="icon" />
                 </Link>
               </div>
             </div>

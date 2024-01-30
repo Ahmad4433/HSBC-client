@@ -3,6 +3,7 @@ import Idenity from '../idenity&contact/Idenity'
 import StepBar from '../../../common/step-bar/StepBar'
 import styles from './info.module.css'
 import {useLocation,useParams} from 'react-router-dom'
+import {useState} from 'react'
 const Info = () => {
   const locaton = useLocation()
   const params = useParams()

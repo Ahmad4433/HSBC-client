@@ -24,6 +24,7 @@ import Step2 from './ahmad-work/customer/personal-info/info/Info'
 import Step3 from './ahmad-work/customer/personal-info/id-managment/IdManagment'
 import Step4 from './ahmad-work/customer/personal-info/address/Address'
 import Step5 from './ahmad-work/customer/personal-info/tax-statment/Tax'
+import Step6 from './ahmad-work/customer/personal-info/bank-information/BankInfo'
 
 // Components ( Common )
 
@@ -55,43 +56,6 @@ const Routess = () => {
             <Route path="/edit-info" element={<PersonalInformation />} />
             <Route path="/bank-information" element={<BankInformation />} />
             <Route path="/baneficiaries" element={<BaneFiciaries />} />
-<<<<<<< HEAD
-
-{/* new routes from ahmad */}
-            {/* Ahmad Routes */}
-            <Route path="/user-profile" element={<UserProfile />} />
-            <Route path="/user-profile" element={<UserProfile />} />
-          <Route path="/user/profile/historical" element={<Historical />} />
-          <Route path="/user/profile/movement" element={<Movement />} />
-          <Route path="/user/profile/terms" element={<Terms />} />
-          <Route path="/user/profile/commitment" element={<Commitment />} />
-          <Route path="/user/write-message" element={<PersonalInfo />} />
-          {/* this for test */}
-          <Route path="/table" element={<Table/>} /> 
-
-      {/* all steps for updating personal data */}
-      <Route path="/account-step2" element={<Step2/>} />
-      <Route path="/account-step3" element={<Step3/>} />
-      <Route path="/account-step4" element={<Step4/>} />
-      <Route path="/account-step5" element={<Step5/>} />
-
-    
-
-
-
-          <Route
-            path="/user/investment/history"
-            element={<InvestmentHistory />}
-          />
-          <Route path="/user/investment/list" element={<InvestmentListAh />} />
-          <Route path="/exchange" element={<Exchange />} />
-          <Route path="/user/create-new/account" element={<NewAcc />} />
-          
-          {/* </Route> */}
-          {/* login form */}
-          <Route path="/login" element={<Login />} />
-         
-=======
             {/* new routes from ahmad */}
             {/* Ahmad Routes */}
             <Route path="/user-profile" element={<UserProfile />} />
@@ -100,6 +64,14 @@ const Routess = () => {
             <Route path="/user/profile/terms" element={<Terms />} />
             <Route path="/user/profile/commitment" element={<Commitment />} />
             <Route path="/user/write-message" element={<PersonalInfo />} />
+
+            <Route path="/account/step2" element={<Step2/>} />
+            <Route path="/account/step3" element={<Step3/>} />
+            <Route path="/account/step4" element={<Step4/>} />
+            <Route path="/account/step5" element={<Step5/>} />
+            <Route path="/account/step1" element={<PersonalInformation/>} />
+            <Route path="/account/step6" element={<Step6/>} />
+
             <Route
               path="/user-investment-history"
               element={<InvestmentHistory />}
@@ -113,7 +85,6 @@ const Routess = () => {
             {/* </Route> */}
             {/* login form */}
             <Route path="/login" element={<Login />} />
->>>>>>> 29edb5dd47b7f65539c5c726bc6b5368fbc393f3
           </Route>
         </Routes>
         {/* <Footer /> */}
