@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './investmentList.module.css'
-const InvestmentList = () => {
+const InvestmentListAh = () => {
   return (
     <div className={styles.main} >
       
@@ -12,4 +12,4 @@ const InvestmentList = () => {
   )
 }
 
-export default InvestmentList
+export default InvestmentListAh
