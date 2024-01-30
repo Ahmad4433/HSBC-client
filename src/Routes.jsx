@@ -11,7 +11,7 @@ import Terms from "./ahmad-work/customer/terms/Terms";
 import PersonalInfo from "./ahmad-work/customer/personal-info/PersonalInfo";
 import InvestmentHistory from "./ahmad-work/customer/investment-history/InvestmentHistory";
 import InvestmentListAh from "./ahmad-work/customer/investmentAh-list/InvestmentListAh";
-// import Exchange from "./ahmad-work/customer/echange-chart/Exchange";
+import Exchange from "./ahmad-work/customer/echange-chart/Exchange";
 import Login from "./ahmad-work/customer/login/Login";
 import NewAcc from "./ahmad-work/customer/create-account/NewAcc";
 // Components ( Common )
@@ -58,7 +58,7 @@ const Routess = () => {
             element={<InvestmentHistory />}
           />
           <Route path="/user/investment/list" element={<InvestmentListAh />} />
-          {/* <Route path="/exchange" element={<Exchange />} /> */}
+          <Route path="/exchange" element={<Exchange />} />
           <Route path="/user/create-new/account" element={<NewAcc />} />
           {/* </Route> */}
           {/* login form */}

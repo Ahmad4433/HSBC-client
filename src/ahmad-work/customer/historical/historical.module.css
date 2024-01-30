@@ -1,5 +1,4 @@
 .main {
-    background-image: url('../../assets//background.jpg');
     min-height: 100vh;
     background-size: cover;
   }
@@ -9,7 +8,8 @@
     grid-template-columns: 1fr 2fr;
     max-width: 1142px;
     margin: 0 auto;
-padding-top: 20rem;
+padding-top: 10rem;
+padding-bottom: 6rem;
     gap: 2rem;
 
   }
@@ -17,6 +17,7 @@ padding-top: 20rem;
   @media (max-width: 756px) {
     .historicalMain {
       grid-template-columns: 1fr;
+      padding-bottom: 6rem;
   gap: 2rem;
  
     }
