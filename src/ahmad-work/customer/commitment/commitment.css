@@ -1,0 +1,33 @@
+.commitment-main{
+    background-image: url('../../assets/background.jpg');
+    min-height: 100vh;
+background-size: cover;
+
+}
+
+.commitment{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+@media(max-width:756px){
+    .commitment{
+        grid-template-columns: 1fr;
+        padding-top: 10rem;
+        
+           
+    }
+
+ 
+    .commit{
+   
+        overflow-x: auto;
+        width: 600px;
+    }
+    
+}
+

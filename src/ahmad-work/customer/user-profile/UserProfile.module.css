@@ -1,0 +1,22 @@
+
+.wrapper{
+    background-image: url('../../assets//background.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.main{
+    display: grid;
+    gap: 2rem;
+    max-width: 1150px;
+    margin: 0 auto;
+   padding-top: 10rem;
+
+}
+
+@media(min-width:756px){
+    .main{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 20rem;
+    }
+}

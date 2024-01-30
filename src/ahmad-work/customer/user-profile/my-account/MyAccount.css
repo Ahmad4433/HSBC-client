@@ -4,7 +4,7 @@
     display: flex;
     align-items: flex-start;   
     flex-direction: column;
-    max-width: 100%;
+    max-width: 390px;
     display: block;
     padding: 2rem 3rem;
     background-color: white;
@@ -12,6 +12,16 @@
     overflow: hidden;
     box-shadow: 4px 6px 10px rgba(0,0,0,0.2);
 }
+
+@media screen and (max-width: 750px){
+    .user-myaccount-main{
+        max-width: 100%;
+        padding: 2rem 1rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
 
 .user-account-booklet{
     display: flex;
