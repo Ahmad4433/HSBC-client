@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { IdentityForm, ResetPassword } from "../../components/ui";
 import { Button } from "../../components/common";
 import { RiEditLine } from "react-icons/ri";
 import { PiArrowFatRightThin } from "react-icons/pi";
 import StepBar from "../../ahmad-work/common/step-bar/StepBar";
-
+import {useLocation} from 'react-router-dom'
 const PersonalInformation = () => {
+  const location = useLocation()
+  const [id,setId] = useState(location.pathname.split('p')[1])
   return (
     <>
+
+
       <div className="personalInformation">
-          <StepBar id={1} />
+    
        
         <div className="personalInformation-header">
           <div>
@@ -29,10 +33,19 @@ const PersonalInformation = () => {
         </div>
 
         {/* Other Components */}
+        <div className="containerManager">
+
+
+
+
+
+<StepBar id={id} />
         <div className="personalInformation-container">
           <IdentityForm />
           <ResetPassword />
         </div>
+      </div>
+
       </div>
     </>
   );

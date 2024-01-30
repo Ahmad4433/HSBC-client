@@ -12,7 +12,7 @@ const IdManagment = () => {
   return (
     <div className={style.main} >
       <div className={style.section} >
-        <StepBar id={4} />
+        <StepBar id={id} />
         <Idenity title='Upload Your Address (Approve)' />
       </div>
   

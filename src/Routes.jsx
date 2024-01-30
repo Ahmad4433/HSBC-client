@@ -24,6 +24,7 @@ import Step2 from './ahmad-work/customer/personal-info/info/Info'
 import Step3 from './ahmad-work/customer/personal-info/id-managment/IdManagment'
 import Step4 from './ahmad-work/customer/personal-info/address/Address'
 import Step5 from './ahmad-work/customer/personal-info/tax-statment/Tax'
+import Step6 from './ahmad-work/customer/personal-info/bank-information/BankInfo'
 
 // Components ( Common )
 
@@ -64,11 +65,12 @@ const Routess = () => {
             <Route path="/user/profile/commitment" element={<Commitment />} />
             <Route path="/user/write-message" element={<PersonalInfo />} />
 
-            <Route path="account/step2" element={<Step2/>} />
-            <Route path="account/step3" element={<Step3/>} />
-            <Route path="account/step4" element={<Step4/>} />
-            <Route path="account/step5" element={<Step5/>} />
-            <Route path="account/step1" element={<PersonalInformation/>} />
+            <Route path="/account/step2" element={<Step2/>} />
+            <Route path="/account/step3" element={<Step3/>} />
+            <Route path="/account/step4" element={<Step4/>} />
+            <Route path="/account/step5" element={<Step5/>} />
+            <Route path="/account/step1" element={<PersonalInformation/>} />
+            <Route path="/account/step6" element={<Step6/>} />
 
             <Route
               path="/user-investment-history"

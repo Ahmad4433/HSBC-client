@@ -11,7 +11,7 @@ const Info = () => {
   return (
     <div className={styles.main} >
 <div className={styles.section} >
-<StepBar id={1} />
+<StepBar id={id} />
       <Idenity title={'Upload Your Identity'} />
 </div>
     
