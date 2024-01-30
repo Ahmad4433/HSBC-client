@@ -1,17 +1,17 @@
 .main{
-    background-image: url('../../assets/background.jpg');
     min-height: 100vh;
     background-size: cover;
 }
 
 
 .terms{
-    padding-top: 20rem;
+    padding-top: 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     max-width: 1140px;
     margin: 0 auto;
+    padding-bottom: 6rem;
     
 }
 
@@ -20,6 +20,7 @@
         grid-template-columns: 1fr;
         gap: 2rem;
         padding-top: 10rem;
+        padding-bottom: 6rem;
     }
 }
 

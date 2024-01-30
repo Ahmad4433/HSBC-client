@@ -10,7 +10,7 @@ import Movement from "./ahmad-work/customer/movement/Movement";
 import Terms from "./ahmad-work/customer/terms/Terms";
 import PersonalInfo from "./ahmad-work/customer/personal-info/PersonalInfo";
 import InvestmentHistory from "./ahmad-work/customer/investment-history/InvestmentHistory";
-import InvestmentList from "./ahmad-work/customer/investment-list/InvestmentList";
+import InvestmentListAh from "./ahmad-work/customer/investmentAh-list/InvestmentListAh";
 import Exchange from "./ahmad-work/customer/echange-chart/Exchange";
 import Login from "./ahmad-work/customer/login/Login";
 import NewAcc from "./ahmad-work/customer/create-account/NewAcc";
@@ -57,7 +57,7 @@ const Routess = () => {
             path="/user/investment/history"
             element={<InvestmentHistory />}
           />
-          <Route path="/user/investment/list" element={<InvestmentList />} />
+          <Route path="/user/investment/list" element={<InvestmentListAh />} />
           <Route path="/exchange" element={<Exchange />} />
           <Route path="/user/create-new/account" element={<NewAcc />} />
           {/* </Route> */}
