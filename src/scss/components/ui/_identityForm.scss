@@ -2,10 +2,14 @@
   background-color: white;
   border: 1px solid #979797;
   border-radius: 2rem;
+
   &-container {
     padding: 2.5rem 5.2rem;
     & > center {
       & > h1 {
+        background-color: white;
+
+        border-radius: 2rem;
         font-size: 2.4rem;
         font-weight: 700;
         margin-bottom: 2.4rem;

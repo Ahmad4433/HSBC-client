@@ -11,8 +11,14 @@ import UserProfile from "./ahmad-work/customer/user-profile/UserProfile";
 import { UserLayout } from "./layout";
 
 // User Modules
-import { Home, InvestmentAccount, InvestmentList } from "./modules/user";
-import PersonalInformation from "./modules/user/PersonalInformation";
+import {
+  BankInformation,
+  Home,
+  InvestmentAccount,
+  InvestmentList,
+  BaneFiciaries,
+  PersonalInformation,
+} from "./modules/user";
 
 const Routess = () => {
   return (
@@ -28,6 +34,8 @@ const Routess = () => {
             <Route path="/investment-list" element={<InvestmentList />} />
             <Route path="/investment-account" element={<InvestmentAccount />} />
             <Route path="/edit-info" element={<PersonalInformation />} />
+            <Route path="/bank-information" element={<BankInformation />} />
+            <Route path="/baneficiaries" element={<BaneFiciaries />} />
 
             {/* Ahmad Routes */}
             <Route path="/user-profile" element={<UserProfile />} />

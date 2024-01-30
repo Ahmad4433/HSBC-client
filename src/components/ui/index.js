@@ -16,3 +16,4 @@ export { default as GetSupport } from "./investmentAccount/GetSupport";
 
 export { default as IdentityForm } from "./personalInformation/IdentityForm";
 export { default as ResetPassword } from "./personalInformation/ResetPassword";
+export { default as BeneficiariesForm } from "./personalInformation/BeneficiariesForm";

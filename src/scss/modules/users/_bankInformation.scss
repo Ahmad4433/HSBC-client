@@ -1,0 +1,21 @@
+.bankInformation {
+  background-color: white;
+  border: 1px solid #979797;
+  border-radius: 2rem;
+  padding: 4rem 5.7rem;
+  &-container {
+    & > center {
+      & > h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 2.4rem;
+      }
+    }
+    // &-form {
+    //   &-feilds {
+    //     & > * {
+    //     }
+    //   }
+    // }
+  }
+}
