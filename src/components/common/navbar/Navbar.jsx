@@ -12,8 +12,15 @@ import {
 import NavbarItem from "./NavbarItem";
 import { Container } from "../../features";
 import { Link } from "react-router-dom";
+import { navbarRoutes } from "../../../data/routes";
+
+// UUID for Random Ids
+
+import { v4 as uuidv4 } from "uuid";
 
 const Navbar = () => {
+  // Handle hover
+
   return (
     <>
       <Container className="main">
@@ -26,10 +33,15 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="navbar-container-menus">
-                <NavbarItem icon={news} text="News" />
-                <NavbarItem icon={accounts} text="Accounts" />
-                <NavbarItem icon={investment} text="Investments" />
-                <NavbarItem icon={stock} text="Stock Exchange" />
+                {navbarRoutes.map((element) => (
+                  <NavbarItem
+                    key={uuidv4()}
+                    icon={element.icon}
+                    text={element.text}
+                    to={element.to}
+                    moreRoutes={element.subRoutes}
+                  />
+                ))}
               </div>
               <div className="navbar-container-profile">
                 <img src={bell} alt="icon" />

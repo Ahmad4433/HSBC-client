@@ -55,6 +55,7 @@ const Routess = () => {
             <Route path="/edit-info" element={<PersonalInformation />} />
             <Route path="/bank-information" element={<BankInformation />} />
             <Route path="/baneficiaries" element={<BaneFiciaries />} />
+<<<<<<< HEAD
 
 {/* new routes from ahmad */}
             {/* Ahmad Routes */}
@@ -90,8 +91,30 @@ const Routess = () => {
           {/* login form */}
           <Route path="/login" element={<Login />} />
          
+=======
+            {/* new routes from ahmad */}
+            {/* Ahmad Routes */}
+            <Route path="/user-profile" element={<UserProfile />} />
+            <Route path="/user/profile/historical" element={<Historical />} />
+            <Route path="/user/profile/movement" element={<Movement />} />
+            <Route path="/user/profile/terms" element={<Terms />} />
+            <Route path="/user/profile/commitment" element={<Commitment />} />
+            <Route path="/user/write-message" element={<PersonalInfo />} />
+            <Route
+              path="/user-investment-history"
+              element={<InvestmentHistory />}
+            />
+            <Route
+              path="/user-investment-list"
+              element={<InvestmentListAh />}
+            />
+            <Route path="/exchange" element={<Exchange />} />
+            <Route path="/user/create-new/account" element={<NewAcc />} />
+            {/* </Route> */}
+            {/* login form */}
+            <Route path="/login" element={<Login />} />
+>>>>>>> 29edb5dd47b7f65539c5c726bc6b5368fbc393f3
           </Route>
-
         </Routes>
         {/* <Footer /> */}
       </Router>

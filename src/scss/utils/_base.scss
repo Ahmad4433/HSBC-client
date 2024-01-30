@@ -1,5 +1,4 @@
-@import '../utils/mixins';
-
+@import "../utils/mixins";
 
 *,
 *::after,
@@ -14,6 +13,10 @@ body {
   font-family: "Plus Jakarta Sans";
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
