@@ -1,0 +1,12 @@
+
+table{
+    font-size: 1.6rem;
+}
+
+
+th,td{
+    padding: 2rem;
+}
+th{
+    text-align: left;
+}
