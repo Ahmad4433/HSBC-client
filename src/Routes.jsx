@@ -13,7 +13,17 @@ import InvestmentHistory from "./ahmad-work/customer/investment-history/Investme
 import InvestmentListAh from "./ahmad-work/customer/investmentAh-list/InvestmentListAh";
 import Exchange from "./ahmad-work/customer/echange-chart/Exchange";
 import Login from "./ahmad-work/customer/login/Login";
-import NewAcc from "./ahmad-work/customer/create-account/NewAcc";
+import Table from "./ahmad-work/tables/Table"; 
+ 
+ //this is for test we will delete letter
+
+// all modules for user personal data
+
+import Step2 from './ahmad-work/customer/personal-info/info/Info'
+import Step3 from './ahmad-work/customer/personal-info/id-managment/IdManagment'
+import Step4 from './ahmad-work/customer/personal-info/address/Address'
+import Step5 from './ahmad-work/customer/personal-info/tax-statment/Tax'
+
 // Components ( Common )
 
 import { UserLayout } from "./layout";
@@ -44,6 +54,7 @@ const Routess = () => {
             <Route path="/edit-info" element={<PersonalInformation />} />
             <Route path="/bank-information" element={<BankInformation />} />
             <Route path="/baneficiaries" element={<BaneFiciaries />} />
+
 {/* new routes from ahmad */}
             {/* Ahmad Routes */}
             <Route path="/user-profile" element={<UserProfile />} />
@@ -53,6 +64,19 @@ const Routess = () => {
           <Route path="/user/profile/terms" element={<Terms />} />
           <Route path="/user/profile/commitment" element={<Commitment />} />
           <Route path="/user/write-message" element={<PersonalInfo />} />
+          {/* this for test */}
+          <Route path="/table" element={<Table/>} /> 
+
+      {/* all steps for updating personal data */}
+      <Route path="/account-step2" element={<Step2/>} />
+      <Route path="/account-step3" element={<Step3/>} />
+      <Route path="/account-step4" element={<Step4/>} />
+      <Route path="/account-step5" element={<Step5/>} />
+
+    
+
+
+
           <Route
             path="/user/investment/history"
             element={<InvestmentHistory />}
@@ -60,6 +84,7 @@ const Routess = () => {
           <Route path="/user/investment/list" element={<InvestmentListAh />} />
           <Route path="/exchange" element={<Exchange />} />
           <Route path="/user/create-new/account" element={<NewAcc />} />
+          
           {/* </Route> */}
           {/* login form */}
           <Route path="/login" element={<Login />} />

@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './id.module.css'
+import styles from './id.module.css'
 const Id = () => {
   return (
     <div>

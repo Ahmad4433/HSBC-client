@@ -6,6 +6,7 @@ import "froala-editor/js/plugins.pkgd.min.js";
 import { AiOutlineUpload } from "react-icons/ai";
 import { CiEdit } from "react-icons/ci";
 
+
 const PersonalInfo = () => {
     
 

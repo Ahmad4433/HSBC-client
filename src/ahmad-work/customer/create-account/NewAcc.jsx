@@ -1,5 +1,5 @@
 import React from 'react'
-import Id from './id/Id'
+import styles from './newAcc.module.css'
 const NewAcc = () => {
   return (
     <div>

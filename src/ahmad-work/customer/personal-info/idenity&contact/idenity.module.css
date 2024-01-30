@@ -1,0 +1,127 @@
+
+
+.card{
+    
+    width: 100%;
+    padding: 2rem 4rem;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #979797;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.title{
+font-size: 24px;
+font-weight: 700;
+text-transform: capitalize;
+}
+
+.preview{
+    max-width: 600px;
+    width: 100%;
+    min-height: 280px;
+    position: relative;
+    overflow: hidden;
+    border: 1px dashed black;
+    border-radius: 12px;
+}
+
+.preview:hover{
+    cursor: pointer;
+    background-color: rgb(249, 253, 255);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    transition: all 0.4s ;
+
+}
+
+.format{
+    background-color: #FF0000;
+    padding: 1rem;
+    width:150px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-bottom-left-radius: 12px;
+    color: white;
+    font-size: 1.2rem;
+    
+}
+
+.upload{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(104, 104, 104);
+    font-size: 1.6rem;
+    gap: 1rem;
+    
+}
+
+.upIcon{
+    font-size: 2rem;
+}
+.detail1{
+    font-size: 1.6rem;
+    max-width: 600px;
+   font-weight: 600;
+    margin-top: 2rem;
+
+}
+
+.detail2,.detail3{
+    width: 60%;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.download{
+max-width: 160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF0000;
+    padding: 2rem;
+    border: 1px dashed #FF0000;
+    border-radius: 10px;
+   
+}
+
+.downTitle{
+    font-size: 1.2rem;
+}
+.downIcon{
+    font-size: 1.6rem;
+
+}
+
+.imgCont{
+    
+    height: 280px;
+    width: 600px;
+    overflow: hidden;
+}
+
+    .img{
+        max-width: 100%;
+        width: 100%;
+    position: absolute;
+    z-index: 10;
+    object-fit: contain;
+    inset: 0;
+        height: 100%;
+ 
+}
+
+.hideCont{
+    display: flex;
+    align-items: center;
+   
+}
