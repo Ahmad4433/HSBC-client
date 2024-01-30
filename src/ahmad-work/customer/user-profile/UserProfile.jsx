@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./userprofile.module.css";
+import styles from "./userProfile.module.css";
 import MyAccount from "./my-account/MyAccount";
 import UserAdvisor from "./user-advisor/UserAdvisor";
 import AccountStatus from "./account-status/AccountStatus";
