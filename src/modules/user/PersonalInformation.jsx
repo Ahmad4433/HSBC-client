@@ -3,11 +3,14 @@ import { IdentityForm, ResetPassword } from "../../components/ui";
 import { Button } from "../../components/common";
 import { RiEditLine } from "react-icons/ri";
 import { PiArrowFatRightThin } from "react-icons/pi";
+import StepBar from "../../ahmad-work/common/step-bar/StepBar";
 
 const PersonalInformation = () => {
   return (
     <>
       <div className="personalInformation">
+          <StepBar id={1} />
+       
         <div className="personalInformation-header">
           <div>
             <h1>Personal Data</h1>

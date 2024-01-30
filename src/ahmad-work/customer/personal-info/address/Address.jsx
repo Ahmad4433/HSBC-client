@@ -13,7 +13,7 @@ const Address = () => {
   return (
     <div className={style.main} >
       <div className={style.section} >
-      <StepBar id={id} />
+      <StepBar id={3} />
       <Idenity title='Upload Selfie' />
       </div>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import style from './idManagment.module.css'
 import Idenity from '../idenity&contact/Idenity'
 import StepBar from '../../../common/step-bar/StepBar'
@@ -8,11 +8,11 @@ const IdManagment = () => {
   const locaton = useLocation()
   const params = useParams()
   const [id,setId] = useState(locaton.pathname.split('p')[1])
-
+  console.log(locaton.pathname)
   return (
     <div className={style.main} >
       <div className={style.section} >
-        <StepBar id={id} />
+        <StepBar id={4} />
         <Idenity title='Upload Your Address (Approve)' />
       </div>
   
