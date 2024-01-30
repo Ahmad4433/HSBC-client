@@ -71,6 +71,7 @@ const Routess = () => {
             <Route path="/account/step5" element={<Step5/>} />
             <Route path="/account/step1" element={<PersonalInformation/>} />
             <Route path="/account/step6" element={<Step6/>} />
+            <Route path="/table" element={<Table/>} />
 
             <Route
               path="/user-investment-history"

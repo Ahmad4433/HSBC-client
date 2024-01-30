@@ -1,12 +1,24 @@
+.main{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20rem;
+    margin-bottom: 6rem;
+}
 
 table{
+    border-collapse:collapse ;
     font-size: 1.6rem;
 }
 
-
-th,td{
+td,th{
     padding: 2rem;
 }
+
 th{
     text-align: left;
 }
+
+tr:nth-child(even){
+    background-color: #d0d0d0;
+}
+

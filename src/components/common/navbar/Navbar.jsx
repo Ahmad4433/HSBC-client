@@ -47,7 +47,7 @@ const Navbar = () => {
               <div className="navbar-container-profile">
                 <img src={bell} alt="icon" />
                 <img src={mail} alt="icon" />
-                <Link to="/account/step2">
+                <Link to="/account/step1">
                   <img   src={profile} alt="icon" />
                 </Link>
               </div>

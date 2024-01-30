@@ -65,9 +65,10 @@ const InvestmentCard = (props) => {
             <LinkBtn
               icon={true}
               iconPath={buyBtn}
-              to={props.to}
+              // to={props.to}
               className="secondry"
               id="color_white"
+              to="/investment-account"
             >
               Buy Ticket
             </LinkBtn>
