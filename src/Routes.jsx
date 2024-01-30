@@ -7,7 +7,6 @@ import UserProfile from "./ahmad-work/customer/user-profile/UserProfile";
 
 // Components ( Common )
 
-// Layouts
 import { UserLayout } from "./layout";
 
 // User Modules
