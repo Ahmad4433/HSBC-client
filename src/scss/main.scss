@@ -39,9 +39,11 @@
 @import "./components/ui/mediaSection";
 @import "./components/ui/getSupport";
 @import "./components/ui/identityForm";
+@import "./components/ui/resetPassword";
 
 // ////////////
 // Modules
 @import "./modules/users/investmentList";
 @import "./modules/users/investmentAccount";
 @import "./modules/users/personalInformation";
+@import "./modules/users/bankInformation";

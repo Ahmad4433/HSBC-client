@@ -9,7 +9,9 @@ const ResetPassword = () => {
     <>
       <div className="resetPassword">
         <div className="resetPassword-container">
-          <h1>Change Your Password</h1>
+          <center>
+            <h1>Change Your Password</h1>
+          </center>
           <div className="resetPassword-container-form">
             <Formik
               initialValues={{
@@ -45,7 +47,9 @@ const ResetPassword = () => {
                     </div>
                   </div>
                   <div className="getSupport-container-form-button">
-                    <Button className="primary">Confirm</Button>
+                    <center>
+                      <Button className="secondry--red">Confirm</Button>
+                    </center>
                   </div>
                 </Form>
               )}
