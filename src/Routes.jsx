@@ -41,9 +41,6 @@ const Routess = () => {
             <Route path="/user-profile" element={<UserProfile />} />
           </Route>
 
-          {/* Admin */}
-          {/* No result found */}
-          {/* <Route path="/noresultfound" element={<NoResultFound />} /> */}
         </Routes>
         {/* <Footer /> */}
       </Router>
