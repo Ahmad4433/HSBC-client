@@ -1,0 +1,58 @@
+.main{
+    background-image: url('../../assets/background.jpg');
+    min-height: 100vh;
+    background-size: cover;
+}
+
+
+.terms{
+    padding-top: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+@media(max-width:756px){
+    .terms{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-top: 10rem;
+    }
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    padding: 3rem;
+    border-radius: 12px;
+flex-direction: column;
+gap: 2rem;
+box-shadow: 4px 6px 10px rgba(0,0,0,0.2);
+
+}
+
+.card div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    color: #878790;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+.value{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.gTitle{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}

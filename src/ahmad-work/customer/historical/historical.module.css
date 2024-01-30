@@ -1,0 +1,77 @@
+.main {
+    background-image: url('../../assets//background.jpg');
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .historicalMain {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1142px;
+    margin: 0 auto;
+padding-top: 20rem;
+    gap: 2rem;
+
+  }
+  
+  @media (max-width: 756px) {
+    .historicalMain {
+      grid-template-columns: 1fr;
+  gap: 2rem;
+ 
+    }
+  }
+  
+  .tHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+  }
+  
+  .tHead div {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .tab {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .table {
+    overflow-y: auto;
+    border-radius: 12px;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    border: 1px solid #E9EFF4;
+    font-size: 1.3rem;
+    padding: 1.6rem;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
+  
+  .rCl {
+    color: #00FF29;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  
+  .rCf {
+    color: #DD9A19;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+  }
+  

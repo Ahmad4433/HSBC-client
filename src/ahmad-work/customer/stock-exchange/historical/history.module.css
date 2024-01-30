@@ -1,0 +1,36 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Poppins&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Poppins&family=Work+Sans&display=swap');
+
+.table{
+    padding: 2rem 4rem;
+    background-color: white;
+    font-family: 'Poppins';
+}
+
+
+.thIcon{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    
+}
+
+th{
+    padding: 0 4rem;
+    font-size: 1.3rem;
+    font-family: 'Work Sans';
+    white-space: nowrap;
+}
+
+
+
+.tr{
+    padding: 2rem 6rem;
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+    
+    
+}

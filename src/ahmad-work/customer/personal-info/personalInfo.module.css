@@ -1,0 +1,114 @@
+.main{
+    background-image: url('../../assets//background.jpg');
+    min-height: 100vh;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.section{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+.editor{
+    background-color: #EAEAEA;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card{
+
+    background-color: white;
+    padding: 4rem;
+    margin-bottom: 2rem;
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.send{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.subject{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.input{
+    background-color: #E8E8E8;
+    padding: 2rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: inherit;
+    margin-bottom: 2rem;
+}
+
+.input::placeholder{
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+.compose{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+.picker{
+    border: 1px dashed black;
+    padding: 2rem 4rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+ justify-content: center;
+ gap: 1rem;
+ max-width: 200px;
+ border-radius: 6px;
+ margin: 0 auto;
+ margin-top: 6rem;
+}
+.picker:hover{
+    cursor: pointer;
+}
+.icon{
+    font-size: 1.8rem;
+}
+
+.edit{
+    background-color: black;
+    color: white;
+    padding: 2.6rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+   max-width: 200px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.edit:hover{
+    cursor: pointer;
+}
+.edit span{
+    font-size: 1.4rem;
+}
+.editI{
+    font-size: 2rem;
+}

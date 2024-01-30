@@ -1,0 +1,56 @@
+.main{
+    background-image: url('../../assets//background.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.section{
+    padding-top: 6rem;
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.content{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.history{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.goto{
+    font-size: 20px;
+
+}
+
+.btn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 4rem;
+    background-color: #D80027;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+
+.buy{
+    font-size: 1.6rem;
+}
+
+.ticket{
+    font-size: 2.4rem;
+    color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
