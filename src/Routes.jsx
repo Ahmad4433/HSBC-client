@@ -97,6 +97,9 @@ const Routess = () => {
 
           {/* Admin Layout */}
 
+
+
+{/* New Changes */}
           <Route path="" element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
             <Route path="/admin/clientProspect" element={<Dashboard />} />
