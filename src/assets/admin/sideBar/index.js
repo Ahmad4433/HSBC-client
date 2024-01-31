@@ -12,4 +12,4 @@ export { default as paiment } from "./paiment.svg";
 export { default as personalization } from "./personalization.svg";
 export { default as product } from "./product.svg";
 export { default as transaction } from "./transaction.svg";
-
+export { default as dashboard } from "/dashboard.svg";
