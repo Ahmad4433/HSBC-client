@@ -1,45 +1,59 @@
-
-
+import {
+  clientProdpect,
+  collaboration,
+  collection,
+  company,
+  contract,
+  current,
+  dashboard,
+  invitation,
+  negosiation,
+  overYourself,
+  paiment,
+  personalization,
+  product,
+  transaction,
+} from "../../assets/admin/sideBar";
 
 const sidebarRoutes = [
   {
-    icon: "",
+    icon: dashboard,
     text: "Dashboard",
     to: "/dashboard",
   },
   {
-    icon: "",
+    icon: clientProdpect,
     text: "Client/Prospect",
     to: "/client-prospect",
   },
   {
-    icon: "",
+    icon: overYourself,
     text: "Get Over Yourself",
     to: "/over-yourself",
   },
   {
-    icon: "",
+    icon: collection,
     text: "Collection",
     to: "/collection",
   },
   {
-    icon: "",
+    icon: paiment,
     text: "Paiment",
     to: "/paiment",
   },
 
   {
-    icon: "",
+    icon: transaction,
     text: "Transaction",
     to: "/transaction",
   },
   {
-    icon: "",
+    icon: contract,
     text: "Contract",
     to: "/contract",
   },
   {
-    icon: "",
+    icon: current,
     text: "Curret Conversation",
     to: "/current-conversation",
   },
@@ -47,35 +61,37 @@ const sidebarRoutes = [
 
 const sidebarMoreRoutes = [
   {
-    icon: "",
+    icon: invitation,
     text: "Invitation Of Leads",
     to: "/invitation-leads",
   },
 
   {
-    icon: "",
+    icon: collaboration,
     text: "Collaboration",
     to: "/collaboration",
   },
   {
-    icon: "",
+    icon: product,
     text: "Product",
     to: "/product",
   },
   {
-    icon: "",
+    icon: negosiation,
     text: "Negosiation",
     to: "/negosiation",
   },
   {
-    icon: "",
+    icon: personalization,
     text: "Personalisation",
     to: "/personalisation",
   },
 
   {
-    icon: "",
+    icon: company,
     text: "Company",
     to: "/company",
   },
 ];
+
+export { sidebarRoutes, sidebarMoreRoutes };
