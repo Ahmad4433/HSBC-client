@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   accounts,
   bell,
@@ -18,9 +18,18 @@ import { navbarRoutes } from "../../../data/routes";
 // UUID for Random Ids
 
 import { v4 as uuidv4 } from "uuid";
+//  Menu Button from React Icon
+
+import { RiMenuFoldLine } from "react-icons/ri";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
-  // Handle hover
+  const [menuToggle, setMenuToggle] = useState(false);
+
+  // Handle Menu Toggle
+  const handleMenuFunction = () => {
+    setMenuToggle(!menuToggle);
+  };
 
   return (
     <>
@@ -48,10 +57,16 @@ const Navbar = () => {
                 <img src={bell} alt="icon" />
                 <img src={mail} alt="icon" />
                 <Link to="/account/step1">
-                  <img   src={profile} alt="icon" />
+                  <img src={profile} alt="icon" />
                 </Link>
+
+                <div className="navbar-container-profile-menubar">
+                  <RiMenuFoldLine onClick={handleMenuFunction} />
+                </div>
               </div>
             </div>
+            {/* Mobile Navbar */}
+            {menuToggle && <MobileNavbar />}
           </div>
         </Container>
       </Container>
