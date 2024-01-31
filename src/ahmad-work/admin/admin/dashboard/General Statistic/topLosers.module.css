@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Poppins&family=Work+Sans&display=swap");
 
 .card {
-  background-color:#0F993E;
+  background-color:#FF715B;
   border-radius: 20px;
   display: flex;
   align-items: flex-start;
@@ -15,7 +15,7 @@
 .title {
   color: white;
   font-family: "Poppins";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: 1px;
 }
 

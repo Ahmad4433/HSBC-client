@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+
+import Statistic from "../../ahmad-work/admin/admin/dashboard/Statistic/Statistic";
+
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
-  )
-}
+    <div>
+      <Statistic/>
+      </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
