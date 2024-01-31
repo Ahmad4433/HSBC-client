@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./toggleBar.module.css";
 const ToggleBar = () => {
+
+  const [toggle,setToggle] = useState(false)
+
+  const clickHandler = ()=>{
+
+    setToggle(!toggle)
+  }
+
   return (
     <div className={style.main}>
       <div className={style.section}>
         <div className={style.toggle}>
-          <div className={style.step1} >
+          <div onClick={clickHandler}  className={`${style.step1} ${toggle ? style.click :''} `} >
             <p>Call Diary</p>
           </div>
-          <div className={style.step2} >
+          <div onClick={clickHandler}  className={`${style.step2} ${!toggle ? style.click:''} ` } >
             <p>General Statistic</p>
           </div>
         </div>

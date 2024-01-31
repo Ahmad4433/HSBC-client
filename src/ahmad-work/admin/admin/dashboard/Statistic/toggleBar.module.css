@@ -1,23 +1,53 @@
 
 
+.main{
+    padding-top: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .toggle{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
     gap: 1rem;
+    
  
 }
 
 .step1{
     width: 100%;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid gray;
     text-align: center;
     padding: 1rem 0;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #6A6D6B;
 }
 .step2{
     width: 100%;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid gray;
     text-align: center;
     padding: 1rem 0;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #6A6D6B;
+}
+
+.step1,.step2:hover{
+    cursor: pointer;
+}
+
+.click{
+
+    width: 100%;
+    border-bottom: 2px solid #20DC49
+    ;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #20DC49;
+
 }

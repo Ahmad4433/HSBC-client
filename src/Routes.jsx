@@ -29,7 +29,8 @@ import Step6 from "./ahmad-work/customer/personal-info/bank-information/BankInfo
 
 
 // admin dashboard routes
-
+import PaymentRoute from './ahmad-work/admin/admin/dashboard/payments/Payment'
+import ClientProspectRoute from './ahmad-work/admin/admin/dashboard/client-prospect/ClientProspect'
 // Components ( Common )
 
 import { AdminLayout, UserLayout } from "./layout";
@@ -100,6 +101,9 @@ const Routess = () => {
 {/* New Changes */}
           <Route path="" element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
+              <Route path="/client-prospect" element={<ClientProspectRoute/>} />
+              <Route path="/payment" element={<PaymentRoute/>} />
+            
         
           
           </Route>

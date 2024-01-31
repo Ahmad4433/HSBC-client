@@ -1,0 +1,129 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Poppins&family=Work+Sans&display=swap');
+
+
+.main{
+    background-color: #F9FBFF;
+    min-height: 100vh;
+}
+
+.card{
+    padding: 4rem;
+    
+}
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.title{
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.aIcon,.sIcon{
+    font-size: 2.4rem;
+    color: #7E7E7E;
+    
+}
+
+.search,.filter{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.filter{
+    font-size: 1.6rem;
+    background-color:#F9FBFF;
+    width: 200 px;
+    border-radius: 12px;
+    height: 60px;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+.sIcon{
+    font-size: 3rem;
+}
+
+.input{
+    background-color: #F9FBFF;
+    outline: none;
+    border: none;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 300px;
+}
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    font-family: 'Poppins';
+    
+}
+
+
+
+
+.table thead tr th{
+    color: #878790;
+    padding: 6rem 4rem;
+    font-size: 1.4rem;
+    text-align: center;
+    white-space: nowrap;
+    
+}
+
+.table tbody tr td{
+    padding: 2rem 4rem;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.5rem;
+   
+}
+
+.table tbody tr{
+    margin-bottom: 1rem;
+}
+
+.date{
+    color: black;
+
+}
+
+
+.name{
+    color: #439F3F;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.action{
+    background-color: #39DE5D;
+    color: white;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 2rem;
+ 
+    
+    
+}
+
+.action:hover{
+    cursor: pointer;
+}
+
+
+.sIcon:hover{
+    cursor: pointer;
+}

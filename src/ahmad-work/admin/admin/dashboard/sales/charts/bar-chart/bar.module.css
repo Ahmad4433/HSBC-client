@@ -1,0 +1,105 @@
+
+
+.chart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    padding: 2rem;
+    border-left: 1px solid #ccc;
+
+    border-radius: 2px;
+    
+   
+
+}
+
+.left{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #6B7A99;
+    gap: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.line1{
+    width: 400px;
+   
+    background-color: #FF6633;
+    display: block;
+    height: 4px;
+    border-radius: 2px
+}
+.line2{
+    width: 360px;   background-color: #3361FF;
+    display: block;
+    height: 4px;
+    border-radius: 2px
+}
+.line3{
+    width: 280px;
+ 
+    background-color: #8833FF;
+    display: block;
+    height: 4px;
+    border-radius: 2px
+}
+.line4{
+    width: 100px;
+    
+    background-color: #2EE6CA;
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+}
+
+
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.right1,.left1{
+    font-size: 1.8rem;
+    color: #4D5E80;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+
+.right1{
+    display: flex;
+    gap: 8rem;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+.right1,.left1 span:hover{
+cursor: pointer;
+}
+
+.bottomB{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.6rem;
+    border-top: 1px solid #ccc;
+}
+
+.more{
+    font-size: 2.4rem;
+
+    color: #C3CAD9;
+}
