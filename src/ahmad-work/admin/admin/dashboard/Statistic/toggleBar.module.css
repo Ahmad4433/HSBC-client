@@ -1,0 +1,23 @@
+
+
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1rem;
+ 
+}
+
+.step1{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 1rem 0;
+}
+.step2{
+    width: 100%;
+    border-bottom: 1px solid red;
+    text-align: center;
+    padding: 1rem 0;
+}

@@ -18,14 +18,23 @@
     color: white;
     font-family: 'Poppins';
     font-size: 1.4rem;
+    letter-spacing: 2px;
   
+}
+
+.title1{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+   
+    letter-spacing: 1px;
 }
 
 .icon{
     color:#0F993E;
     font-family: 'Poppins';
     font-size: 1.4rem;
-    font-weight:700;
+  
 }
 
 .icon1{
