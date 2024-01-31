@@ -45,7 +45,7 @@ import {
   BaneFiciaries,
   PersonalInformation,
 } from "./modules/user";
-import { Dashboard } from "./modules/admin";
+import { Dashboard,clientProdpect } from "./modules/admin";
 
 const Routess = () => {
   return (
@@ -99,6 +99,8 @@ const Routess = () => {
 
           <Route path="" element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
+            <Route path="/admin/clientProspect" element={<Dashboard />} />
+
             <Route path="/admin/dashboard-total" element={<Total/>}  />
             <Route path="/admin/dashboard-top-gainer" element={<TopGainer/>}  />
             {/* <Route path="/admin/dashboard/*" element={<DashBoad/>} /> */}
