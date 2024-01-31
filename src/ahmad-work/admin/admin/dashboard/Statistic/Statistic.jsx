@@ -12,6 +12,7 @@ const Statistic = () => {
           <Total/>
           <TopGainer/>
           <TopLosers/>
+        hello
         </div>
 
     </div>
