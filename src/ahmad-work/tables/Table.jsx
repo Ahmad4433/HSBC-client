@@ -8,6 +8,7 @@ const Table = () => {
   
 <table>
 
+
 <tr>
   <th>market</th>
   <th></th>
@@ -17,6 +18,7 @@ const Table = () => {
   <th>position</th>
   <th>commitment</th>
 </tr>
+
 
 <tbody>
   <tr>
