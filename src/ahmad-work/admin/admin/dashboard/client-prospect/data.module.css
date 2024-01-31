@@ -1,0 +1,63 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Poppins&family=Work+Sans&display=swap');
+
+
+.main{
+    padding: 4rem;
+}
+
+.card{
+    border: 1px solid #ECEEF6;
+    padding: 4rem 4rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;    
+    font-family: 'Poppins';
+    gap: 2rem;
+    display: block;
+    max-width: 100%;
+    width: 220px;
+}
+.title{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.stCard{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner{
+    display: flex;
+    align-items: center;
+    background-color: #DAFFDF;
+    padding: 0.4rem;
+    border-radius: 6px;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #0B8A00;
+    
+    
+
+    
+}
+
+.stock{
+    color: #0B8A00;
+}
+
+.num{
+    font-size:3.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cat{
+    color: #949494;
+    text-transform: capitalize;
+    font-size: 2rem;
+}

@@ -1,0 +1,15 @@
+
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.sec2{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-evenly;
+}
