@@ -26,6 +26,10 @@ import Step4 from "./ahmad-work/customer/personal-info/address/Address";
 import Step5 from "./ahmad-work/customer/personal-info/tax-statment/Tax";
 import Step6 from "./ahmad-work/customer/personal-info/bank-information/BankInfo";
 
+
+// admin dashboard routes
+// import TopGainer from './ahmad-work/admin/admin/dashboard/General Statistic/Total'
+
 // Components ( Common )
 
 import { AdminLayout, UserLayout } from "./layout";
@@ -93,6 +97,7 @@ const Routess = () => {
 
           <Route path="" element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
+            {/* <Route path="/admin/dashboard-top-gainer" element={<TopGainer/>}  /> */}
           </Route>
         </Routes>
         {/* <Footer /> */}
