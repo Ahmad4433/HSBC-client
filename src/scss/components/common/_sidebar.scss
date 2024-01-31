@@ -1,5 +1,105 @@
 .sidebar {
-    &-container {
-        
+  background: #daffdf;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  width: 306px;
+  height: 100%;
+  &-container {
+    padding: 0rem 2.8rem;
+    height: 100vh;
+
+    &-logo {
+      padding-top: 5rem;
+      padding-bottom: 6rem;
+      text-align: center;
     }
+    &-mainMenus {
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 0.2rem;
+        }
+      }
+      & > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem 1rem;
+        border-radius: 0.8rem;
+        transition: 0.3s ease-in-out;
+        & > div {
+          display: flex;
+          align-items: center;
+          & > img {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-right: 1.5rem;
+          }
+          & > p {
+            color: #89978b;
+            font-size: 1.4rem;
+            font-weight: 500;
+          }
+        }
+        & > * {
+          &:last-child {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 2rem;
+            color: #89978b;
+          }
+        }
+        &:hover {
+          background-color: #39de5d9a;
+        }
+      }
+    }
+
+    &-subMenus {
+      margin-top: 3rem;
+      background-color: white;
+      border-radius: 1rem;
+      padding: 1.5rem 1rem;
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 0.2rem;
+        }
+      }
+      & > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem 1rem;
+        border-radius: 0.8rem;
+        transition: 0.3s ease-in-out;
+        & > div {
+          display: flex;
+          align-items: center;
+          & > img {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-right: 1.5rem;
+          }
+          & > p {
+            color: #9197b3;
+            font-size: 1.4rem;
+            font-weight: 500;
+          }
+        }
+        & > * {
+          &:last-child {
+            color: #9197b3;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 2rem;
+            color: #89978b;
+          }
+        }
+        &:hover {
+          background-color: #39de5d9a;
+        }
+      }
+    }
+  }
 }
