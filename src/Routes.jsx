@@ -29,9 +29,7 @@ import Step6 from "./ahmad-work/customer/personal-info/bank-information/BankInfo
 
 
 // admin dashboard routes
-import Total from './ahmad-work/admin/admin/dashboard/General Statistic/Total'
-import TopGainer from './ahmad-work/admin/admin/dashboard/General Statistic/TopGainer'
-// import DashBoad from "./ahmad-work/admin/admin/dashboard/dashboard/DashBoad";
+
 // Components ( Common )
 
 import { AdminLayout, UserLayout } from "./layout";
@@ -102,11 +100,8 @@ const Routess = () => {
 {/* New Changes */}
           <Route path="" element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
-            <Route path="/admin/clientProspect" element={<Dashboard />} />
-
-            <Route path="/admin/dashboard-total" element={<Total/>}  />
-            <Route path="/admin/dashboard-top-gainer" element={<TopGainer/>}  />
-            {/* <Route path="/admin/dashboard/*" element={<DashBoad/>} /> */}
+        
+          
           </Route>
         </Routes>
         {/* <Footer /> */}

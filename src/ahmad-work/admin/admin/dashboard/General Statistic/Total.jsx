@@ -9,7 +9,7 @@ const Total = () => {
 
           <div className={style.card} >
             <div className={style.first} >
-              <p className={style.title} >Total</p>
+              <p  className={style.title1} >Total</p>
                < AiOutlineDollar  className={style.icon1 } />
             </div>
             <div>

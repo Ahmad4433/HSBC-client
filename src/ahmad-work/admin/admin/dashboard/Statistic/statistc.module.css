@@ -1,0 +1,20 @@
+
+@media(min-width:756px){
+    
+    .level{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:3rem;
+        max-width: 100%;
+        width: 100%;
+        padding: 2rem;
+       
+    }
+    }
+    
+    .level{
+       
+        display: grid;
+        gap: 3rem;
+        padding: 2rem;
+    }
