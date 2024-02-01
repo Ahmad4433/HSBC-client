@@ -15,7 +15,7 @@ import Exchange from "./ahmad-work/customer/echange-chart/Exchange";
 import Login from "./ahmad-work/customer/login/Login";
 import Table from "./ahmad-work/tables/Table";
 import NewAcc from "./ahmad-work/customer/create-account/NewAcc";
-
+import singupRoute from './ahmad-work/customer/signup/Signup'
 //this is for test we will delete letter
 
 // all modules for user personal data
@@ -43,6 +43,7 @@ import {
   PersonalInformation,
 } from "./modules/user";
 import { Dashboard, clientProdpect } from "./modules/admin";
+import SignUpForm from "./ahmad-work/customer/signup/Signup";
 
 const Routess = () => {
   return (
@@ -76,6 +77,7 @@ const Routess = () => {
             <Route path="/account/step1" element={<PersonalInformation />} />
             <Route path="/account/step6" element={<Step6 />} />
             <Route path="/table" element={<Table />} />
+            <Route path="/signup" element={<SignUpForm/>} />
 
             <Route
               path="/user-investment-history"
