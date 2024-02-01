@@ -42,7 +42,9 @@ import {
   BaneFiciaries,
   PersonalInformation,
 } from "./modules/user";
-import { Dashboard, clientProdpect } from "./modules/admin";
+
+// Admin Routes
+import { ClientAndProspect, Dashboard } from "./modules/admin";
 
 const Routess = () => {
   return (
@@ -97,7 +99,10 @@ const Routess = () => {
           {/* New Changes */}
           <Route path="" element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
-            <Route path="/client-prospect" element={<ClientProspectRoute />} />
+            <Route
+              path="/admin/client-prospect"
+              element={<ClientAndProspect />}
+            />
             <Route path="/payment" element={<PaymentRoute />} />
           </Route>
         </Routes>

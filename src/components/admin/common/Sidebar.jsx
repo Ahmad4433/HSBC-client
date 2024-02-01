@@ -16,9 +16,9 @@ const Sidebar = () => {
             <img src={logo} alt="logo" />
           </div>
           <div className="sidebar-container-mainMenus">
-            {sidebarRoutes.map((item) => (
+            {sidebarRoutes.map((item, index) => (
               <>
-                <Link to={item.to}>
+                <Link to={item.to} key={index}>
                   <div>
                     <img src={item.icon} alt="icon" />
                     <p>{item.text}</p>
