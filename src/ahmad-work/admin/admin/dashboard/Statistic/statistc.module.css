@@ -1,20 +1,37 @@
+.main {
+  background-color: #f2efff;
+  min-height: 100vh;
+}
+
+@media (min-width: 756px) {
+  .level {
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
+    justify-content: center;
+  }
+}
+
+.level {
+  display: grid;
+  gap: 3rem;
+  padding: 2rem;
+}
 
 @media(min-width:756px){
-    
-    .level{
+    .reminder {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap:3rem;
-        max-width: 100%;
-        width: 100%;
-        padding: 2rem;
-       
-    }
-    }
-    
-    .level{
-       
-        display: grid;
-        gap: 3rem;
-        padding: 2rem;
-    }
+        grid-auto-flow: column;
+        grid-template-columns: 33%;
+        padding: 1rem;
+        gap: 1rem;
+      }
+      
+}
+
+.reminder{
+    display: grid;
+    gap: 3rem;
+    padding: 1rem;
+}

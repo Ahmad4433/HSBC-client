@@ -7,7 +7,6 @@ const Sales = () => {
     <div>
       <div className={style.card}>
         <div className={style.section}>
-        
           <WeeklySale title='This week' color={"white"} />
           <WeeklySale title='This month' color="#ccc" />
         </div>
