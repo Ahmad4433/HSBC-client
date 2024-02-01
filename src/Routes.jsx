@@ -42,8 +42,14 @@ import {
   BaneFiciaries,
   PersonalInformation,
 } from "./modules/user";
+<<<<<<< HEAD
 import { Dashboard, clientProdpect } from "./modules/admin";
 import SignUpForm from "./ahmad-work/customer/signup/Signup";
+=======
+
+// Admin Routes
+import { ClientAndProspect, Dashboard } from "./modules/admin";
+>>>>>>> 58ca7e1c666c40045ba1881f5c4c0bb2ce26a59f
 
 const Routess = () => {
   return (
@@ -99,7 +105,10 @@ const Routess = () => {
           {/* New Changes */}
           <Route path="" element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
-            <Route path="/client-prospect" element={<ClientProspectRoute />} />
+            <Route
+              path="/admin/client-prospect"
+              element={<ClientAndProspect />}
+            />
             <Route path="/payment" element={<PaymentRoute />} />
           </Route>
         </Routes>
