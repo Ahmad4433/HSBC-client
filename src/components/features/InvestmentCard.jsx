@@ -42,7 +42,7 @@ const InvestmentCard = (props) => {
               </Grid>
             </div>
             <div className="investmentCard-container-content-section-menus">
-              <Grid className="grid-4">
+              <Grid className="grid-4-not">
                 <div>
                   <p>Interest</p>
                   <p> {props.interest}% Annualy</p>

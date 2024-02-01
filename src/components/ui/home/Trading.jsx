@@ -14,7 +14,7 @@ const Trading = () => {
         <div className="trade_section-container">
           <h1>Trading</h1>
 
-          <div className="trade_section-container">
+          <div className="trade_section-container-grid">
             <Grid className="grid-5">
               <TradeValues day="Today" value="16" />
               <TradeValues day="Yesterday" value="12" />

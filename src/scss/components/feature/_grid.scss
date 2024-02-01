@@ -21,22 +21,22 @@
   grid-template-columns: repeat(5, 1fr);
   grid-row-gap: 1.6rem;
   grid-column-gap: 3.2rem;
+  place-items: center;
+  & > * {
+    place-items: center;
+  }
 
   @include respond(tab-port) {
     grid-template-columns: repeat(3, 1fr);
   }
   @include respond(phone) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3.2rem;
-
-  @include respond(tab-port) {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 .grid-4 {
   grid-template-columns: repeat(4, 1fr);
@@ -44,6 +44,15 @@
 
   @include respond(tab-port) {
     grid-template-columns: repeat(2, 1fr);
-    
   }
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.grid-4-not {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.2rem;
+
 }

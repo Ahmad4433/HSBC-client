@@ -1,14 +1,5 @@
 import React, { useState } from "react";
-import {
-  accounts,
-  bell,
-  investment,
-  logo,
-  mail,
-  news,
-  profile,
-  stock,
-} from "../../../assets/user/navbar";
+import { bell, logo, mail, profile } from "../../../assets/user/navbar";
 
 import NavbarItem from "./NavbarItem";
 import { Container } from "../../features";
@@ -66,7 +57,7 @@ const Navbar = () => {
               </div>
             </div>
             {/* Mobile Navbar */}
-            {menuToggle && <MobileNavbar />}
+            {menuToggle && <MobileNavbar onClick={handleMenuFunction} />}
           </div>
         </Container>
       </Container>

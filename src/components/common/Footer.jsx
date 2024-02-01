@@ -49,14 +49,17 @@ const Footer = () => {
 
                 <div className="footer_socialMedia">
                   <p>Social Media</p>
-                  <img src={facebook} alt="icon" />
-                  <img src={twitter} alt="icon" />
-                  <img src={linkedin} alt="icon" />
-                  <img src={youtube} alt="icon" />
-                  <img src={instagram} alt="icon" />
-                  <img src={googleplus} alt="icon" />
-                  <img src={pinterest} alt="icon" />
-                  <img src={rss} alt="icon" />
+
+                  <div>
+                    <img src={facebook} alt="icon" />
+                    <img src={twitter} alt="icon" />
+                    <img src={linkedin} alt="icon" />
+                    <img src={youtube} alt="icon" />
+                    <img src={instagram} alt="icon" />
+                    <img src={googleplus} alt="icon" />
+                    <img src={pinterest} alt="icon" />
+                    <img src={rss} alt="icon" />
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,15 +1,27 @@
+@import "./../../utils/mixins";
+
 .trade_section {
   padding: 3rem 10rem;
   background-color: white;
   border-radius: 1.6rem;
+  @include respond(tab-port) {
+    padding: 3rem 3rem;
+  }
 
   &-container {
     display: flex;
     align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
     & > h1 {
       font-size: 2.4rem;
       font-weight: 500;
       margin-right: 12rem;
+      @include respond(tab-port) {
+        margin-bottom: 5rem;
+      }
     }
   }
 }

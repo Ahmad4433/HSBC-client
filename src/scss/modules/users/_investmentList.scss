@@ -1,4 +1,5 @@
 @import "../../variable";
+@import "../../utils/mixins";
 
 .investmentlist {
   padding-top: 4.4rem;
@@ -21,7 +22,21 @@
     padding: 3.4rem 6.5rem;
     border-radius: 2rem;
     background: white;
+    @include respond(tab-port) {
+      padding: 3rem 2.5rem;
+    }
     &-toggle {
+      display: flex;
+      align-items: center;
+      @include respond(tab-port) {
+        flex-direction: column;
+        & > * {
+          &:first-child {
+            margin-bottom: 1rem;
+            border-radius: 20px 20px 20px 20px;
+          }
+        }
+      }
       & > button {
         border: 1px solid #595959;
         cursor: pointer;
@@ -38,11 +53,21 @@
       }
       & > * {
         width: 50%;
+        @include respond(tab-port) {
+          width: 100%;
+        }
         &:first-child {
           border-radius: 20px 0px 0px 20px;
+          @include respond(tab-port) {
+            margin-bottom: 1rem;
+            border-radius: 20px 20px 20px 20px;
+          }
         }
         &:last-child {
           border-radius: 0px 20px 20px 0px;
+          @include respond(tab-port) {
+            border-radius: 20px 20px 20px 20px;
+          }
         }
       }
     }
