@@ -99,14 +99,14 @@ const Routess = () => {
 
 
 {/* New Changes */}
-          <Route path="" element={<AdminLayout />}>
+          {/* <Route path="" element={<AdminLayout />}> */}
             <Route path="/admin/dashboard" element={<Dashboard />} />
               <Route path="/client-prospect" element={<ClientProspectRoute/>} />
               <Route path="/payment" element={<PaymentRoute/>} />
             
         
           
-          </Route>
+          {/* </Route> */}
         </Routes>
         {/* <Footer /> */}
       </Router>

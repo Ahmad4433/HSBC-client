@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import style from "./toggleBar.module.css";
-const ToggleBar = () => {
+const ToggleBar = ({onSave}) => {
 
   const [toggle,setToggle] = useState(false)
 
   const clickHandler = ()=>{
 
     setToggle(!toggle)
+    onSave(toggle)
   }
 
   return (

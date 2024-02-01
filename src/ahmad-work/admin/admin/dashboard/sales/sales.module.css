@@ -1,11 +1,18 @@
 
 
-.card{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
+@media(min-width:756px){
+    .card{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
 }
 
 
-
+.card{
+    display: grid;
+    gap: 3rem;
+    padding: 1rem;
+}
