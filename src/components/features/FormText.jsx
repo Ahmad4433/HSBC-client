@@ -12,7 +12,8 @@ const FormText = ({ label, className, ...props }) => {
         {...field}
         {...props}
         autoComplete="off"
-        id={`${meta.touched && meta.error && "is-invalid"}`}
+
+        id={`${meta.touched && meta.error && className+"-is-invalid"}`}
       />
       <ErrorMessage component="div" name={field.name} />
     </div>

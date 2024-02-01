@@ -1,7 +1,14 @@
+@import "../../utils/mixins";
+
 .banner {
   // padding-bottom: 2rem;
   background-repeat: no-repeat;
   border-radius: 2rem;
+  // height: 300px;
+  padding-bottom: 2rem;
+  @include respond(tab-port) {
+    overflow: hidden;
+  }
 
   &_main {
     padding-top: 5rem;
@@ -15,11 +22,17 @@
     justify-content: space-between;
     padding: 10rem 6.5rem;
     border-radius: 0.8rem;
+    @include respond(tab-port) {
+      padding: 5rem 3rem;
+    }
     &-content {
       color: white;
       & > h3 {
         font-size: 3.6rem;
         font-weight: 700;
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
       }
       & > h6 {
         font-size: 2rem;

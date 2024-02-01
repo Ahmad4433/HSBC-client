@@ -1,4 +1,5 @@
 @import "../../variable";
+@import "../../utils/mixins";
 
 .footer {
   background-color: $blue_dark;
@@ -13,15 +14,34 @@
   }
   &-container {
     padding: 10rem 8.3rem;
+    @include respond(tab-port) {
+      padding: 6rem 2rem;
+    }
     &-content {
       display: flex;
       align-items: center;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+        text-align: center;
+      }
+
       & > div {
         width: 50%;
+        @include respond(tab-port) {
+          width: 100%;
+        }
       }
       &-logo {
+        @include respond(tab-port) {
+          margin-bottom: 4rem;
+        }
         & > img {
           margin-left: 1.6rem;
+          @include respond(tab-port) {
+            margin-left: 0rem;
+            width: 20rem;
+          }
         }
       }
       &-contact {
@@ -30,9 +50,16 @@
           align-items: center;
           margin-top: 1.9rem;
           margin-bottom: 4.3rem;
+          @include respond(tab-port) {
+            flex-direction: column;
+          }
           & > * {
             &:first-child {
               margin-right: 9rem;
+              @include respond(tab-port) {
+                margin-right: 0rem;
+                margin-bottom: 2rem;
+              }
             }
           }
         }
@@ -48,12 +75,23 @@
       font-weight: 400;
       color: white;
     }
-    & > img {
-      cursor: pointer;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      & > p {
+        margin-bottom: 1rem;
+      }
     }
-    & > * {
-      &:not(:last-child) {
-        margin-right: 2rem;
+
+    & > div {
+      & > img {
+        cursor: pointer;
+      }
+
+      & > * {
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
       }
     }
   }
@@ -62,17 +100,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
     &-menu {
       display: flex;
       align-items: center;
       & > * {
         margin-right: 5rem;
+
+        @include respond(tab-port) {
+          margin-right: 1rem;
+
+          & > a {
+            font-size: 1.2rem;
+          }
+        }
       }
     }
     &-copy {
       & > p {
         color: white;
         font-size: 1.4rem;
+        @include respond(tab-port) {
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+        }
       }
     }
   }
@@ -81,6 +135,16 @@
 .contact_Item {
   display: flex;
   align-items: center;
+  @include respond(tab-port) {
+    flex-direction: column;
+    & > img {
+      margin-right: 0rem;
+      margin-bottom: 2rem;
+    }
+    & > p {
+      text-align: center;
+    }
+  }
   & > img {
     margin-right: 1.6rem;
   }

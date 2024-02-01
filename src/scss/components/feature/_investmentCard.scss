@@ -1,4 +1,5 @@
 @import "../../variable";
+@import "../../utils/mixins";
 
 .investmentCard {
   border: 1px solid #9197b3;
@@ -8,18 +9,35 @@
   &-container {
     display: flex;
     align-items: center;
-    
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
 
     &-img {
       margin-right: 4rem;
+      @include respond(tab-port) {
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        padding: 2rem;
+      }
       & > img {
         height: 266px;
         width: 35rem;
+        @include respond(tab-port) {
+          width: 100%;
+          border-radius: 1rem;
+          height: 280px;
+        }
       }
     }
     &-content {
       width: 100%;
       margin-right: 4rem;
+      @include respond(tab-port) {
+        margin-right: 0rem;
+        padding: 2rem;
+      }
       &-section {
         &-header {
           margin-bottom: 1.9rem;

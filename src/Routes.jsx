@@ -16,7 +16,6 @@ import Login from "./ahmad-work/customer/login/Login";
 import Table from "./ahmad-work/tables/Table";
 import NewAcc from "./ahmad-work/customer/create-account/NewAcc";
 
-
 //this is for test we will delete letter
 
 // all modules for user personal data
@@ -27,10 +26,9 @@ import Step4 from "./ahmad-work/customer/personal-info/address/Address";
 import Step5 from "./ahmad-work/customer/personal-info/tax-statment/Tax";
 import Step6 from "./ahmad-work/customer/personal-info/bank-information/BankInfo";
 
-
 // admin dashboard routes
-import PaymentRoute from './ahmad-work/admin/admin/dashboard/payments/Payment'
-import ClientProspectRoute from './ahmad-work/admin/admin/dashboard/client-prospect/ClientProspect'
+import PaymentRoute from "./ahmad-work/admin/admin/dashboard/payments/Payment";
+import ClientProspectRoute from "./ahmad-work/admin/admin/dashboard/client-prospect/ClientProspect";
 // Components ( Common )
 
 import { AdminLayout, UserLayout } from "./layout";
@@ -44,7 +42,7 @@ import {
   BaneFiciaries,
   PersonalInformation,
 } from "./modules/user";
-import { Dashboard,clientProdpect } from "./modules/admin";
+import { Dashboard, clientProdpect } from "./modules/admin";
 
 const Routess = () => {
   return (
@@ -96,17 +94,12 @@ const Routess = () => {
 
           {/* Admin Layout */}
 
-
-
-{/* New Changes */}
-          {/* <Route path="" element={<AdminLayout />}> */}
+          {/* New Changes */}
+          <Route path="" element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
-              <Route path="/client-prospect" element={<ClientProspectRoute/>} />
-              <Route path="/payment" element={<PaymentRoute/>} />
-            
-        
-          
-          {/* </Route> */}
+            <Route path="/client-prospect" element={<ClientProspectRoute />} />
+            <Route path="/payment" element={<PaymentRoute />} />
+          </Route>
         </Routes>
         {/* <Footer /> */}
       </Router>

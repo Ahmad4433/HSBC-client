@@ -1,5 +1,5 @@
 @import "../../variable";
-
+@import "../../utils/mixins";
 .newSection {
   padding-bottom: 6rem;
   &-container {
@@ -13,6 +13,9 @@
     &-header {
       display: flex;
       align-items: center;
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
       &-green {
         display: flex;
         align-items: center;
@@ -22,6 +25,11 @@
         border-radius: 1.8rem;
         margin-right: 2rem;
         width: 60rem;
+        @include respond(tab-port) {
+          width: 100%;
+          margin-bottom: 2rem;
+          margin-right: 0rem;
+        }
         & > img {
           margin-right: 2.7rem;
         }
@@ -55,8 +63,15 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
       &-content {
         margin-right: 4rem;
+        @include respond(tab-port) {
+          margin-right: 0rem;
+          margin-bottom: 4rem;
+        }
         &-performance {
           display: flex;
           align-items: center;
@@ -128,7 +143,9 @@
       }
       &-image {
         & > img {
-          width: 100%;
+          width: 50rem;
+          @include respond(tab-port) {
+          }
         }
       }
     }
