@@ -19,43 +19,43 @@ const sidebarRoutes = [
   {
     icon: dashboard,
     text: "Dashboard",
-    to: "/dashboard",
+    to: "/admin/dashboard",
   },
   {
     icon: clientProdpect,
     text: "Client/Prospect",
-    to: "/client-prospect",
+    to: "/admin/client-prospect",
   },
   {
     icon: overYourself,
     text: "Get Over Yourself",
-    to: "/over-yourself",
+    to: "/admin/over-yourself",
   },
   {
     icon: collection,
     text: "Collection",
-    to: "/collection",
+    to: "/admin/collection",
   },
   {
     icon: paiment,
     text: "Paiment",
-    to: "/payment",
+    to: "/admin/payment",
   },
 
   {
     icon: transaction,
     text: "Transaction",
-    to: "/transaction",
+    to: "/admin/transaction",
   },
   {
     icon: contract,
     text: "Contract",
-    to: "/contract",
+    to: "/admin/contract",
   },
   {
     icon: current,
     text: "Curret Conversation",
-    to: "/current-conversation",
+    to: "/admin/current-conversation",
   },
 ];
 
@@ -63,34 +63,34 @@ const sidebarMoreRoutes = [
   {
     icon: invitation,
     text: "Invitation Of Leads",
-    to: "/invitation-leads",
+    to: "/admin/invitation-leads",
   },
 
   {
     icon: collaboration,
     text: "Collaboration",
-    to: "/collaboration",
+    to: "/admin/collaboration",
   },
   {
     icon: product,
     text: "Product",
-    to: "/product",
+    to: "/admin/product",
   },
   {
     icon: negosiation,
     text: "Negosiation",
-    to: "/negosiation",
+    to: "/admin/negosiation",
   },
   {
     icon: personalization,
     text: "Personalisation",
-    to: "/personalisation",
+    to: "/admin/personalisation",
   },
 
   {
     icon: company,
     text: "Company",
-    to: "/company",
+    to: "/admin/company",
   },
 ];
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Sidebar } from "../../components/admin/common";
 import { Outlet } from "react-router-dom";
+import { TopBar } from "../../components/common";
 
 const AdminLayout = () => {
   return (
@@ -11,7 +12,12 @@ const AdminLayout = () => {
             <Sidebar />
           </div>
           <div className="adminLayout-container-outlet">
-            <Outlet />
+            <div className="adminLayout-container-outlet-topbar">
+              <TopBar />
+            </div>
+            <div className="adminLayout-container-outlet-outlet">
+              <Outlet />
+            </div>
           </div>
         </div>
       </div>

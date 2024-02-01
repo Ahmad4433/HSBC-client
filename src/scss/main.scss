@@ -28,6 +28,7 @@
 @import "./components/common/footer";
 @import "./components/common/button";
 @import "./components/common/sidebar";
+@import "./components/common/topbar";
 
 // ui
 @import "./components/ui/banner";
@@ -49,7 +50,5 @@
 @import "./modules/users/personalInformation";
 @import "./modules/users/bankInformation";
 
-
 // Layouts
-@import './layout/adminLayout';
-
+@import "./layout/adminLayout";
