@@ -1,0 +1,115 @@
+
+
+.section{
+    max-width: 1146px;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+.card{
+ 
+    display: flex;
+    align-items: center;
+
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #F0F2F5;
+    place-items: center;
+
+}
+
+.item1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 8rem;
+    flex: 1;
+
+    justify-content: center;
+
+
+
+}
+
+.greating{
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.loginTitle{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+
+.input{
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 7px;
+    max-width: 400px;
+    width: 400px;
+margin-bottom: 2rem;
+    border: 1px solid white;
+   
+
+}
+
+.action{
+    background-color: white;
+    padding: 1.4rem 4rem;
+    border: 1px solid #5A5A5A;
+    max-width: 320px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    width: 320px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.action:hover{
+    cursor: pointer;
+}
+
+.img{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    max-width: 100%;
+
+}
+
+.error{
+    border: 1px solid red;
+}
+
+.button{
+    background-color: inherit;
+    border: none;
+
+    outline: none;
+
+}
+.formG{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.errorText{
+    font-size: 1.4rem;
+   position: relative;
+   top: -2rem;
+    color: red;
+}
