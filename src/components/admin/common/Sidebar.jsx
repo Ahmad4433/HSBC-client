@@ -17,28 +17,24 @@ const Sidebar = () => {
           </div>
           <div className="sidebar-container-mainMenus">
             {sidebarRoutes.map((item, index) => (
-              <>
-                <Link to={item.to} key={index}>
-                  <div>
-                    <img src={item.icon} alt="icon" />
-                    <p>{item.text}</p>
-                  </div>
-                  <RiArrowRightSLine />
-                </Link>
-              </>
+              <Link to={item.to} key={index}>
+                <div>
+                  <img src={item.icon} alt="icon" />
+                  <p>{item.text}</p>
+                </div>
+                <RiArrowRightSLine />
+              </Link>
             ))}
           </div>
           <div className="sidebar-container-subMenus">
-            {sidebarMoreRoutes.map((item) => (
-              <>
-                <Link to={item.to}>
-                  <div>
-                    <img src={item.icon} alt="icon" />
-                    <p>{item.text}</p>
-                  </div>
-                  <RiArrowRightSLine />
-                </Link>
-              </>
+            {sidebarMoreRoutes.map((item, index) => (
+              <Link to={item.to} index={index}>
+                <div>
+                  <img src={item.icon} alt="icon" />
+                  <p>{item.text}</p>
+                </div>
+                <RiArrowRightSLine />
+              </Link>
             ))}
           </div>
           <div className="sidebar-container-profile"></div>
