@@ -1,10 +1,21 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import style from "./signup.module.css";
 import loginimagr from "../../assets/loginimage.jpg";
+import { useDispatch, useSelector } from "react-redux";
+import httpAction from "../../../store/actions/httpAction";
+import urlList from "../../../store/utils/urlList";
+import { Link } from "react-router-dom";
+import { CircularProgress, Snackbar, Alert } from "@mui/material";
+import { uiActions } from "../../../store/slices/ui-slice";
 
 const Signup = () => {
+  const list = urlList();
+  const dispatch = useDispatch();
+  const isLoading = useSelector((state) => state.ui.loading);
+  const error = useSelector((state) => state.ui.error);
+  const [test, setTest] = useState(null);
   const btnRef = useRef();
   const initialValues = {
     email: "",
@@ -24,9 +35,19 @@ const Signup = () => {
     name: Yup.string().required("Required"),
   });
 
-  const onSubmit = (values) => {
+  const onSubmit = async (values) => {
     // Your login logic here
-    console.log(values);
+    const data = {
+      url: list.signupUser,
+      method: "POST",
+      body: {
+        name: values.name,
+        email: values.email,
+        password: values.password,
+      },
+    };
+    const result = await dispatch(httpAction(data));
+    setTest(result?.message);
   };
 
   const formik = useFormik({
@@ -35,13 +56,29 @@ const Signup = () => {
     onSubmit,
   });
 
+
+  const closeHandler = ()=>{
+    setTest(null)
+    dispatch(uiActions.showError(null))
+  }
+
   return (
     <div className={style.main}>
+      {isLoading && (
+        <div className={style.model}>
+          <CircularProgress color="secondary" />
+        </div>
+      )}
+
       <div className={style.section}>
+        <div className={style.navigate}>
+          <p>Don't have an account?</p>
+          <Link to={"/login"}>Login!</Link>
+        </div>
         <div className={style.card}>
           <div className={style.item1}>
-            <p className={style.greating}>Welcome Back</p>
-            <p className={style.loginTitle}>Sign up to contineu</p>
+            <p className={style.greating}>Welcome To HSCB</p>
+            <p className={style.loginTitle}>Sign up to continue</p>
             <form onSubmit={formik.handleSubmit}>
               <div className={style.formG}>
                 <div>
@@ -59,7 +96,7 @@ const Signup = () => {
                     onBlur={formik.handleBlur}
                     value={formik.values.name}
                   />
-                 {formik.touched.name && formik.errors.name && (
+                  {formik.touched.name && formik.errors.name && (
                     <div className={style.errorText}>{formik.errors.name}</div>
                   )}
                 </div>
@@ -118,11 +155,18 @@ const Signup = () => {
               <img src={loginimagr} alt="Login" className={style.img} />
             </div>
           </div>
-          <div className={style.navigate} >
-            
-          </div>
         </div>
       </div>
+      <Snackbar
+        autoHideDuration={6000}
+        open={test || error}
+        onClose={closeHandler}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert variant="filled" severity={error ? 'warning' :"info"} onClose={closeHandler}>
+          <div className={style.res}>{test || error}</div>
+        </Alert>
+      </Snackbar>
     </div>
   );
 };

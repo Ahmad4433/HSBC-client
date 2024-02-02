@@ -15,8 +15,13 @@ import Exchange from "./ahmad-work/customer/echange-chart/Exchange";
 import Login from "./ahmad-work/customer/login/Login";
 import Table from "./ahmad-work/tables/Table";
 import NewAcc from "./ahmad-work/customer/create-account/NewAcc";
-import LoginRoute from './ahmad-work/customer/login/Login'
-import SignupRoute from './ahmad-work/customer/signup/Signup'
+import LoginRoute from "./ahmad-work/customer/login/Login";
+import VerificationPage from "./ahmad-work/customer/verification-page/verificatiobPage";
+import SignupRoute from "./ahmad-work/customer/signup/Signup";
+import UserOutlet from "./ahmad-work/super-component/user-outlet/UserOutlet";
+import AdminOutlet from "./ahmad-work/super-component/admin-outlet/AdminOutlet";
+import SuperCom from "./ahmad-work/super-component/SuperCom";
+
 //this is for test we will delete letter
 
 // all modules for user personal data
@@ -54,9 +59,12 @@ const Routess = () => {
         <ScrollToTop />
         <Routes>
           {/* User */}
-          <Route path="/" element={<SignupRoute/>} />
+          <Route path="/" element={<SuperCom />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/user-verification" element={<VerificationPage />} />
 
           {/* <Route path="/" element={<Home />} /> */}
+
           <Route element={<UserLayout />}>
             <Route path="/home" element={<Home />} />
             <Route path="/investment-list" element={<InvestmentList />} />
@@ -80,7 +88,6 @@ const Routess = () => {
             <Route path="/account/step1" element={<PersonalInformation />} />
             <Route path="/account/step6" element={<Step6 />} />
             <Route path="/table" element={<Table />} />
-            
 
             <Route
               path="/user-investment-history"
@@ -94,21 +101,26 @@ const Routess = () => {
             <Route path="/user/create-new/account" element={<NewAcc />} />
             {/* </Route> */}
             {/* login form */}
-            <Route path="/login" element={<Login />} />
           </Route>
-
 
           {/* Admin Layout */}
 
           {/* New Changes */}
-          <Route path="" element={<AdminLayout />}>
-            <Route path="/admin/dashboard" element={<Dashboard />} />
-            <Route
-              path="/admin/client-prospect"
-              element={<ClientAndProspect />}
-            />
-            <Route path="/payment" element={<PaymentRoute />} />
+
+       
+           
+            
+            <Route  element={<SuperCom />}>
+            <Route path="/" element={<AdminLayout />}>
+              <Route path="/admin/dashboard" element={<Dashboard />} />
+              <Route
+                path="/admin/client-prospect"
+                element={<ClientAndProspect />}
+              />
+              <Route path="/payment" element={<PaymentRoute />} />
+              </Route>
           </Route>
+             
         </Routes>
         {/* <Footer /> */}
       </Router>
