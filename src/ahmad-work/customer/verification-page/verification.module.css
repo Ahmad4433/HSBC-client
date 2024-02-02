@@ -1,0 +1,57 @@
+
+
+.main{
+    min-height: 100vh;
+    background-color: #daffdfb1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loadingSec{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.loadingSec h2{
+    text-transform: capitalize;
+    font-family: "Poppins";
+    font-family: 2rem;
+    color:#333;
+}
+
+
+.message{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.title{
+   
+    font-family: 'Poppins';
+    font-size: 2rem;
+}
+.message a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: seagreen;
+    font-size: 2rem;
+}
+.message a:hover{
+    color: green;
+}
+
+.message span{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: seagreen;
+}
