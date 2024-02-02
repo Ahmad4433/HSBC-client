@@ -15,7 +15,8 @@ import Exchange from "./ahmad-work/customer/echange-chart/Exchange";
 import Login from "./ahmad-work/customer/login/Login";
 import Table from "./ahmad-work/tables/Table";
 import NewAcc from "./ahmad-work/customer/create-account/NewAcc";
-import singupRoute from './ahmad-work/customer/signup/Signup'
+import LoginRoute from './ahmad-work/customer/login/Login'
+import SignupRoute from './ahmad-work/customer/signup/Signup'
 //this is for test we will delete letter
 
 // all modules for user personal data
@@ -42,14 +43,9 @@ import {
   BaneFiciaries,
   PersonalInformation,
 } from "./modules/user";
-<<<<<<< HEAD
-import { Dashboard, clientProdpect } from "./modules/admin";
-import SignUpForm from "./ahmad-work/customer/signup/Signup";
-=======
 
 // Admin Routes
 import { ClientAndProspect, Dashboard } from "./modules/admin";
->>>>>>> 58ca7e1c666c40045ba1881f5c4c0bb2ce26a59f
 
 const Routess = () => {
   return (
@@ -58,10 +54,11 @@ const Routess = () => {
         <ScrollToTop />
         <Routes>
           {/* User */}
+          <Route path="/" element={<SignupRoute/>} />
 
           {/* <Route path="/" element={<Home />} /> */}
-          <Route path="" element={<UserLayout />}>
-            <Route path="/" element={<Home />} />
+          <Route element={<UserLayout />}>
+            <Route path="/home" element={<Home />} />
             <Route path="/investment-list" element={<InvestmentList />} />
             <Route path="/investment-account" element={<InvestmentAccount />} />
             <Route path="/edit-info" element={<PersonalInformation />} />
@@ -83,7 +80,7 @@ const Routess = () => {
             <Route path="/account/step1" element={<PersonalInformation />} />
             <Route path="/account/step6" element={<Step6 />} />
             <Route path="/table" element={<Table />} />
-            <Route path="/signup" element={<SignUpForm/>} />
+            
 
             <Route
               path="/user-investment-history"
@@ -99,6 +96,7 @@ const Routess = () => {
             {/* login form */}
             <Route path="/login" element={<Login />} />
           </Route>
+
 
           {/* Admin Layout */}
 

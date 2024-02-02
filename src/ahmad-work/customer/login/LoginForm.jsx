@@ -9,6 +9,7 @@ const LoginForm = () => {
   const initialValues = {
     email: '',
     password: '',
+    name:'',
   };
 
 const btnHadler = ()=>{
@@ -45,6 +46,7 @@ const btnHadler = ()=>{
             
     <div className={style.formG} > 
     <div>
+  
     <input
                 type="email"
                 id="email"
