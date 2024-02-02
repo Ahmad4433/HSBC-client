@@ -17,3 +17,7 @@ export { default as GetSupport } from "./investmentAccount/GetSupport";
 export { default as IdentityForm } from "./personalInformation/IdentityForm";
 export { default as ResetPassword } from "./personalInformation/ResetPassword";
 export { default as BeneficiariesForm } from "./personalInformation/BeneficiariesForm";
+
+// Client Prospect
+export { default as ProspectData } from "./clientProspect/ProspectData";
+export { default as ProspectClientData } from "./clientProspect/ProspectClientData";
