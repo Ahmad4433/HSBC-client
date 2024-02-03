@@ -73,7 +73,7 @@ const Signup = () => {
       <div className={style.section}>
         <div className={style.navigate}>
           <p>Don't have an account?</p>
-          <Link to={"/login"}>Login!</Link>
+          <Link to={"/"}>Login!</Link>
         </div>
         <div className={style.card}>
           <div className={style.item1}>

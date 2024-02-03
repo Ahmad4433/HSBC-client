@@ -53,20 +53,24 @@ import {
 import { ClientAndProspect, Dashboard } from "./modules/admin";
 
 const Routess = () => {
+
+const adminCode = localStorage.getItem('userCode')
+
   return (
     <>
       <Router>
         <ScrollToTop />
         <Routes>
           {/* User */}
-          <Route path="/" element={<SuperCom />} />
+         
           <Route path="/login" element={<Login />} />
           <Route path="/user-verification" element={<VerificationPage />} />
-
+<Route path='/signup' element={<SignupRoute/>} />
           {/* <Route path="/" element={<Home />} /> */}
 
-          <Route element={<UserLayout />}>
-            <Route path="/home" element={<Home />} />
+        <Route element={<UserOutlet/>} >
+        <Route element={<UserLayout />}>
+            <Route path="/" element={<Home />} />
             <Route path="/investment-list" element={<InvestmentList />} />
             <Route path="/investment-account" element={<InvestmentAccount />} />
             <Route path="/edit-info" element={<PersonalInformation />} />
@@ -102,6 +106,7 @@ const Routess = () => {
             {/* </Route> */}
             {/* login form */}
           </Route>
+        </Route>
 
           {/* Admin Layout */}
 
@@ -110,7 +115,7 @@ const Routess = () => {
        
            
             
-            <Route  element={<SuperCom />}>
+            <Route  element={<SuperCom  />}>
             <Route path="/" element={<AdminLayout />}>
               <Route path="/admin/dashboard" element={<Dashboard />} />
               <Route

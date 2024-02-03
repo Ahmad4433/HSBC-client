@@ -39,7 +39,7 @@ const sidebarRoutes = [
   {
     icon: paiment,
     text: "Paiment",
-    to: "/admin/payment",
+    to: "/payment",
   },
 
   {

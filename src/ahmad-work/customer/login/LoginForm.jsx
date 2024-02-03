@@ -57,12 +57,16 @@ useEffect(()=>{
     localStorage.setItem("userName", res.userInfo.userName);
     localStorage.setItem('userCode',res.userInfo.role)
     dispatch(loginActions.loginStatus(true))
-    dispatch(loginActions.setUserCode(res.userInfo.role))
     if(res.userInfo.role===1){
       navigate('/admin/dashboard')
+      dispatch(loginActions.setUserCode(1))
+
     }
     if(res.userInfo.role===2){
-      navigate('/home')
+
+      navigate('/')
+      dispatch(loginActions.setUserCode(2))
+
     }
    
     
@@ -89,7 +93,7 @@ useEffect(()=>{
       <div className={style.section}>
         <div className={style.navigate}>
           <p>Already have an account?</p>
-          <Link to={"/"}>Sign up!</Link>
+          <Link to={"/signup"}>Sign up!</Link>
         </div>
         <div className={style.card}>
           <div className={style.item1}>

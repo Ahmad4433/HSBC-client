@@ -1,33 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
-import UserOutlet from './user-outlet/UserOutlet';
-import AdminOutlet from './admin-outlet/AdminOutlet';
-import { Outlet,Navigate } from 'react-router-dom';
-
+import { Navigate,Outlet } from 'react-router-dom';
 
 const SuperCom = () => {
-// const [userCode,setUserCode] = useState(localStorage.getItem('userCode'))
-// const isLoading = useSelector(state=>state.ui.loading)
-// if(isLoading){
-//     return
-// }
-const userCode =2
+  const [loading, setLoading] = useState(true);
+  const [adminCode, setAdminCode] = useState(null);
 
+  useEffect(() => {
+    // Fetch adminCode from localStorage
+    const adminCodeFromLocalStorage = localStorage.getItem('userCode');
+    setAdminCode(adminCodeFromLocalStorage);
+    setLoading(false); // Mark loading as false once adminCode is fetched
+  }, []);
 
+  // If still loading, return null or a loading indicator
+  if (loading) {
+    return null; // or return a loading indicator
+  }
 
-    useEffect(()=>{
-console.log(userCode)
-
-    },[userCode])
-
-
-
-
-    if(userCode === 2){
-        return <Outlet/>
-    }else{
-          return  <Navigate to='/login' />
-    }
-}
+  // Once loading is complete, render based on adminCode
+  if (adminCode !== '1') {
+    return <Navigate to="/" />;
+  } else {
+    return <Outlet />;
+  }
+};
 
 export default SuperCom;
