@@ -30,8 +30,9 @@
     padding: 3rem;
     border-radius: 12px;
 flex-direction: column;
-gap: 2rem;
+justify-content: space-between;
 box-shadow: 4px 6px 10px rgba(0,0,0,0.2);
+gap: 2rem;
 
 }
 

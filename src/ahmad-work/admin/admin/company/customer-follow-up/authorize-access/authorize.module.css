@@ -1,0 +1,49 @@
+
+.card{
+    border: 1px solid #0F993E;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.title{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.detail{
+    font-size: 1.6rem;
+    text-align: center;
+  width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+
+}
+
+.sections{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 4rem;
+   
+    
+}
+
+.sec1{
+    width: 100%;
+    padding: 1rem;
+   background-color: #39DE5D;
+   text-align: center;
+    border-radius: 8px;
+   
+}
+
+.sec2{
+    width: 100%;
+    border: 1px solid #39DE5D;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}

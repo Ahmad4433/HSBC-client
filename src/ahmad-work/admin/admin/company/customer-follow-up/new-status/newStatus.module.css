@@ -1,0 +1,39 @@
+
+
+.card{
+    background-color: #0F993E;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    min-height: 300px;
+}
+
+.section div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+
+.title{
+    text-align: center;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+   padding-bottom: 4rem;
+
+}
+
+.section div span{
+    font-size: 1.4rem;
+
+}
+
+.first{
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    font-size: 1.8rem;
+}

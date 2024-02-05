@@ -1,34 +1,17 @@
-.commitment-main{
-    min-height: 100vh;
-background-size: cover;
 
+
+.commitment-main{
+    padding: 6rem 0;
 }
 
 .commitment{
-    max-width: 1140px;
-    margin: 0 auto;
-    padding-top: 10rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    padding-bottom: 6rem;
 }
-
 @media(max-width:756px){
     .commitment{
         grid-template-columns: 1fr;
-        padding-top: 10rem;
-        padding-bottom: 4rem;
-        
-           
-    }
-
- 
-    .commit{
-   
-        overflow-x: auto;
-        width: 600px;
-    }
     
+    }
 }
-

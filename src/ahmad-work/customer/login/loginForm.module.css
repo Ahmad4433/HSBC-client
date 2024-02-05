@@ -21,10 +21,20 @@
 
 }
 
+
+.main{
+    min-height: 100vh;
+    background-color: #F0F2F5;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
 .section{
     max-width: 1146px;
     margin: 0 auto;
-    background-color: #F0F2F5;
+ 
+
     border-radius: 12px;
 }
 
@@ -59,7 +69,6 @@
     align-items: center;
     border-radius: 12px;
     overflow: hidden;
-    background-color: #F0F2F5;
     place-items: center;
 
 }
@@ -147,6 +156,10 @@ box-shadow: 0 0 10px rgba(0,0,0,0.2);
 @media(max-width:756px){
     .image{
         display: none;
+    }
+    .main{
+        display: block;
+        padding-top: 6rem;
     }
 }
 

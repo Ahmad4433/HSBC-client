@@ -1,0 +1,59 @@
+
+
+.card{
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    border: 1px solid #0F993E ;
+}
+
+.title{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 6rem;
+    font-size: 1.6rem;
+
+}
+
+.comment{
+    resize: none;
+    border: 1px solid #0F993E;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.section div input{
+    display: block;
+}
+
+.section div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.action{
+    text-align: center;
+    width: 100%;
+}
+.btn{
+    background-color: #39DE5D;
+    padding: 2rem 6rem;
+    border: none;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}

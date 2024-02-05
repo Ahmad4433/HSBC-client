@@ -1,0 +1,38 @@
+
+
+.card{
+    margin-top: 4rem;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+
+}
+.btn1{
+    background-color: #39DE5D;
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+}
+.btn2{
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn1,.btn2:hover{
+    cursor: pointer;
+}
+
+
+.his{
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}

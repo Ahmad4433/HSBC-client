@@ -77,7 +77,7 @@ const Signup = () => {
         </div>
         <div className={style.card}>
           <div className={style.item1}>
-            <p className={style.greating}>Welcome To HSCB</p>
+            <p className={style.greating}>Welcome To HSBC</p>
             <p className={style.loginTitle}>Sign up to continue</p>
             <form onSubmit={formik.handleSubmit}>
               <div className={style.formG}>

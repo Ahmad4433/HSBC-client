@@ -1,0 +1,37 @@
+
+
+.card{
+    background-color: #0F993E;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.title{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 6rem;
+}
+
+.section{
+    border: 2px solid #FFFFFF;
+    padding: 2rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+}
+
+.section span{
+    display: block;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1.6rem;
+
+}
+
+    

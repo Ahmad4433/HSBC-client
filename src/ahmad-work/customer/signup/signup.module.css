@@ -12,11 +12,18 @@
     
 }
 
+
+.main{
+    min-height: 100vh;
+    background-color: #F0F2F5;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 .section{
     max-width: 1146px;
     margin: 0 auto;
  
-    background-color: #F0F2F5;
     border-radius: 12px;
 }
 
@@ -168,14 +175,19 @@ box-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-transform: capitalize;
 }
 
+   
+
 @media(max-width:756px){
+    .img{
+        display: none;
+    }
+
     .card{
         display: block;
     }
-}
-
-@media(max-width:756px){
-    .image{
-        display: none;
+    .main{
+        display: block;
+        padding-top: 6rem;
     }
 }
+

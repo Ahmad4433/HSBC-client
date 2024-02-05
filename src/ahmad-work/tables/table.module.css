@@ -1,0 +1,57 @@
+
+
+
+
+.wrapper{
+    width: 100%;
+    overflow-x: auto;
+}
+.card{
+    background-color: white;
+    padding: 2rem;
+    max-width: 100%;
+    border-radius: 12px;
+    
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableHeadRow th{
+    padding: 2rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.tableHeadRow{
+    border-bottom: 1px solid gray;
+
+}
+
+.tBody tr td{
+    padding: 2rem;
+    font-size: 1.6rem;  
+    text-align: center;  
+}
+
+
+
+
+.tBody tr{
+    border-bottom: 1px solid #ccc;
+}
+
+.first{
+    border-right: 1px solid #ccc;
+    white-space: nowrap;
+    font-weight: 700;
+    font-family: 'Poppins'
+    
+}
+.last{
+    border-left: 1px solid #ccc;
+}

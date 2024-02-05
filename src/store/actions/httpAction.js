@@ -25,7 +25,11 @@ const httpAction = (data) => async (dispatch) => {
 
     return resData;
   } catch (error) {
-    dispatch(uiActions.showError(error.message));
+    if(error.message === 'Failed to fetch'){
+      dispatch(uiActions.showError('something went wrong try again!'))
+    }else{
+      dispatch(uiActions.showError(error.message));
+    }
   } finally {
     dispatch(uiActions.stopLoading());
   }

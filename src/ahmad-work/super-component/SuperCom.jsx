@@ -19,7 +19,7 @@ const SuperCom = () => {
 
   // Once loading is complete, render based on adminCode
   if (adminCode !== '1') {
-    return <Navigate to="/" />;
+    return <Navigate to="/login" />;
   } else {
     return <Outlet />;
   }
