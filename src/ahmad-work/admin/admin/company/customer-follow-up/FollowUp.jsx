@@ -12,6 +12,7 @@ import History from "./history/History";
 const FollowUp = () => {
   return (
     <div className={style.main}>
+      <p className={style.title2} >Company</p>
       <div className={style.card}>
         <div className={style.head}>
           <div className={style.item1}>

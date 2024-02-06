@@ -1,8 +1,17 @@
+.main{
+    border: 1px solid #ccc;
+    padding: 2rem 4rem;
+    border-radius: 12px;
+    background-color: white;
+}
 
 
 
-.card{
-    padding: 1rem;
+.title2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
 }
 
 .head{
@@ -45,7 +54,7 @@
 
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(580px,1fr));
     gap: 2rem;
     padding: 2rem 0;
 }

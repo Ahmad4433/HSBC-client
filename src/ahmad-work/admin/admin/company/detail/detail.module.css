@@ -1,13 +1,21 @@
 
 
+.main{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 2rem 4rem;
+    border-radius: 12px;
+}
+
 .card{
-    border: 1px solid #0F993E;
+
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    border: 1px solid #0F993E;
     gap: 1rem;
-    padding: 2rem;
-    border-radius: 12px;
+border-radius: 12px;
+  padding: 2rem 12rem;
 }
 
 

@@ -1,0 +1,265 @@
+
+.main{
+    padding: 2rem 6rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+
+.title{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.bannerS{
+    display: flex;align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.bannerS span{
+    font-size: 1.4rem;
+}
+
+.bannerS2{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+}
+.bannerS2 p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.bannerS2 div span{
+    font-size: 1.4rem;
+}
+
+.banner{
+position: relative;
+max-width: 100%;
+width: 100%;
+margin-bottom: 2rem;
+
+}
+
+.img{
+    height: 100%;
+ width: 100%;
+}
+.content{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 0 4rem;
+}
+
+.content span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.posting{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+}
+
+
+.posting1 p,.posting2 p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.posting1 div span,.posting2 div span{
+    font-size: 1.4rem;
+}
+
+.owners{
+    display: flex;
+    align-items: flex-start;
+   gap: 4rem;
+   margin-top: 2rem;
+}
+
+
+/* .owner{
+
+    background-color: green;
+} */
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+top: -2rem;
+}
+
+.laptop{
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.profileD{
+    display: flex;
+    flex-direction: column;
+
+}
+.name{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.detail{
+    font-size: 1.4rem;
+}
+
+.selection{
+      height: 100%;
+    width: 100%;
+    display: flex;
+gap: 1rem;
+}
+
+.colors{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.colorT{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.select span{
+    display: block;
+    padding: 1rem;
+}
+
+.select span:hover{
+    cursor: pointer;
+}
+.select{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 0.4rem;
+ 
+}
+.colorN{
+    border: 2px solid rgb(236, 29, 29);
+border-radius: 8px;
+font-size: 1.2rem;
+font-weight: 500;
+}
+
+.colorN1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    }
+
+    .colorN2{
+        border: 2px solid purple;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    
+    }
+    .colorN3{
+        background-color: pink;
+        border-radius: 8px;font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .colorN4{
+        border: 2px solid green;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .colorN5{
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .bannerL{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin: 2rem 0;
+    }
+    .bannerL p{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .bannerL span{
+        font-size: 1.4rem;
+    }
+
+    .trading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .trading p{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .timer div{
+        background-color: #E8F5E7;
+        padding: 1em;
+        border-radius: 12px;
+
+    }
+    .timer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+    }
+
+    .timer div span{
+        color: green;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+
+    .icon{
+        transform: rotate(45deg);
+        margin-left: 0.6rem;
+        color: green;
+        font-size: 1.8rem;
+    }
+
+    .amount{
+        color: black;
+        font-weight: 700;
+        font-size: 1.6rem;
+    }

@@ -1,0 +1,50 @@
+
+
+.tabs{
+    display: flex;
+    /* align-items: center; */
+    /* padding: 2rem; */
+      background-color: #EEEAEA;
+    border-radius: 8px;
+  justify-content: space-between;
+margin-bottom: 1rem;
+overflow: hidden;
+}
+
+.tabs span{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem;
+    display: block;
+    height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+white-space: nowrap;
+
+    
+}
+
+.tabs span:hover{
+    cursor: pointer;
+}
+
+.model{
+    min-width: 100vh;
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.478);
+    padding: 2rem 4rem;
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+.active{
+
+    background-color: #0F993E;
+    color: white;
+   
+}
