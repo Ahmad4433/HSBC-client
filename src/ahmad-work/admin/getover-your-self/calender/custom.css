@@ -1,0 +1,64 @@
+
+.calender-main{
+
+    background-color: #E4FBE7;
+    min-height: 100vh;
+    width: 100%;
+
+   padding-top: 10rem;
+
+}
+
+.custom-calendar .react-calendar{
+    padding: 2rem;
+    display: block;
+    background-color: #F8F8F8;
+    width: 100%;
+  min-height: 80vh;
+  font-size: 2.4rem;
+  border: none;
+  font-family: inherit;
+ 
+}
+
+
+
+
+.custom-title {
+
+    font-size: 16px; 
+    color: black; 
+    padding: 4rem;
+    box-sizing: border-box; 
+}
+
+
+.calendar-action{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding:  2rem 4rem;
+}
+
+
+.clnd1{
+    display: block;
+border: none;
+padding: 2rem;
+background-color: #FF3A29;
+color: white;
+border-radius: 8px;
+}
+.clnd2{
+    display: block;
+    border: none;
+    padding: 2rem;
+    background-color: #FFE5D3;
+    color: red;
+    border-radius: 8px;
+
+}
+
+.clnd1,.clnd2:hover{
+    cursor: pointer;
+}

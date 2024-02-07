@@ -1,0 +1,150 @@
+
+
+.main{
+    background-color: white;
+    border-radius: 12px;
+
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.title{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.inner{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  
+}
+
+.inner1,.inner2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.inner1{
+    background-color:#F9FBFF;
+    padding: 0 2rem;
+    border-radius: 10px;
+
+}
+.select{
+    background-color: inherit;
+    font-family: inherit;
+    width: 160px;
+    padding: 2rem 1.4rem;
+    border: none;
+    background-color: #F9FBFF;
+    border-radius: 10px;
+}
+
+.option{
+    color: gray;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.inner1 input{
+    border: none;
+    padding: 2rem 1rem;
+    width: 240px;
+    background-color: inherit;
+
+    
+    font-family: inherit;
+    
+}
+
+.search{
+    font-size: 3rem;
+    color: gray;
+}
+
+.search:hover{
+    cursor: pointer;
+}
+
+.detailH{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    width: 100%;
+}
+
+.detailH div{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.detailH p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #939393;
+}
+
+.detailH div p{
+    font-size: 1.6rem;
+font-weight: 600;
+color: #939393;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+
+}
+
+.left{
+    display: flex;
+   flex: 1;
+   align-items: center;
+   gap: 4rem;
+}
+.right{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+    padding: 0 6rem;
+ 
+}
+
+
+
+.name{
+    font-weight: 700;
+    color: black;
+}
+
+.content p{
+    font-size: 1.6rem;
+
+
+}
+
+.detail{
+    color: #9197B3;
+}
+
+.right p{
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+

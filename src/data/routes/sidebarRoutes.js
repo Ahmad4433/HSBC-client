@@ -29,12 +29,12 @@ const sidebarRoutes = [
   {
     icon: overYourself,
     text: "Get Over Yourself",
-    to: "/admin/over-yourself",
+    to: "/getover/yourself",
   },
   {
     icon: collection,
     text: "Collection",
-    to: "/admin/collection",
+    to: "/collection",
   },
   {
     icon: paiment,

@@ -1,10 +1,11 @@
 import React from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { FaFolder } from "react-icons/fa";
 import { CiCalendar } from "react-icons/ci";
 import { IoSearch } from "react-icons/io5";
 import { CiFilter } from "react-icons/ci";
 
-import { FaFolder } from "react-icons/fa";
+
 import { deleteIcon, editIcon, options } from "../../../assets/admin";
 
 const ProspectClientData = () => {

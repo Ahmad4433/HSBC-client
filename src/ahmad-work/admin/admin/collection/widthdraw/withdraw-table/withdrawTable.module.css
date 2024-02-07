@@ -1,0 +1,89 @@
+.main {
+  margin-top: 6rem;
+  background-color: white;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  font-family: "Poppins";
+}
+
+.table thead tr th {
+  color: #878790;
+  padding: 6rem 1.4rem;
+  font-size: 1.4rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table tbody tr td {
+  padding: 1.4rem;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.5rem;
+}
+
+.table tbody tr {
+  margin-bottom: 1rem;
+}
+
+.date {
+  color: black;
+}
+
+.name {
+  color: #439f3f;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.action {
+  background-color: #0052b4;
+  color: white;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.action:hover {
+  cursor: pointer;
+}
+
+.filterCont {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  gap: 1rem;
+}
+.item span {
+  font-size: 1.4rem;
+  color: #878790;
+}
+.item select,
+input {
+  border: none;
+  font-family: inherit;
+}
+
+.iconS {
+  font-size: 1.6rem;
+  color: #878790;
+}

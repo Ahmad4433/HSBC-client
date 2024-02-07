@@ -1,5 +1,5 @@
-import { uiActions } from "../slices/ui-slice";
 
+import {uiActions} from '../slices/ui-slice'
 const httpAction = (data) => async (dispatch) => {
   dispatch(uiActions.startLoading());
   dispatch(uiActions.sendStatus(null))
@@ -11,9 +11,13 @@ const httpAction = (data) => async (dispatch) => {
       headers: data.token
         ? {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${data.token}`,
+            "Authorization": `Bearer ${data.token}`,
+            "Access-Control-Allow-Origin": "*", 
           }
-        : { "Content-Type": "application/json" },
+        : { 
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*", 
+          },
     });
 
     const resData = await response.json();

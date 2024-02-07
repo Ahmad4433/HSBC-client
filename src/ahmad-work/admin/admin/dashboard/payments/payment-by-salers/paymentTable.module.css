@@ -9,7 +9,8 @@
 }
 
 .card{
-    padding: 4rem;
+    padding: 4rem 0;
+ 
     
 }
 
@@ -17,8 +18,12 @@
 .navigation{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 2rem;
+    background-color: white;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    width: 100%;
 }
 
 .title{
@@ -33,10 +38,16 @@
     
 }
 
+.both{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
 .search,.filter{
     display: flex;
     align-items: center;
     gap: 2rem;
+
 }
 
 .filter{
@@ -47,8 +58,8 @@
     height: 60px;
     display: flex;
     gap: 1rem;
-    justify-content: flex-end;
     padding-right: 1rem;
+    align-items: center;
 }
 
 .sIcon{
@@ -69,6 +80,7 @@
     width: 100%;
     background-color: white;
     font-family: 'Poppins';
+
     
 }
 
@@ -77,7 +89,7 @@
 
 .table thead tr th{
     color: #878790;
-    padding: 6rem 4rem;
+    padding: 6rem 1.4rem;
     font-size: 1.4rem;
     text-align: center;
     white-space: nowrap;
@@ -85,8 +97,9 @@
 }
 
 .table tbody tr td{
-    padding: 2rem 4rem;
+
     text-align: center;
+    padding: 1.4rem;
     white-space: nowrap;
     font-size: 1.5rem;
    

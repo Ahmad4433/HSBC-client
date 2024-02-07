@@ -1,0 +1,39 @@
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2re 4rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #595959;
+    font-family: "Poppins";
+    border-bottom: 1px solid #595959;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.nav p:hover{
+    cursor: pointer;
+    background-color: #F9FBFF;
+}
+
+.active{
+    color: #20DC49;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Poppins";
+    border-bottom: 1px solid #20DC49;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+
+}

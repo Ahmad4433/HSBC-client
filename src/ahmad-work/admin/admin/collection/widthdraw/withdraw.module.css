@@ -1,0 +1,45 @@
+
+
+.title{
+    color: #439F3F;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 4rem 1rem;
+}
+
+.view{
+    background-color: white;
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.2);
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+    border-bottom: 1px solid #ccc;
+ 
+
+}
+
+.head p{
+    font-size: 1.6rem;
+    color: #939393;
+    padding: 2rem 6rem;
+}
+
+
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 6rem;
+    
+}
+.table p{
+    font-weight: 700;
+    font-size: 1.8rem;
+   padding-right: 4rem;
+    
+    
+}

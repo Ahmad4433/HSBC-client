@@ -1,0 +1,168 @@
+
+.main{
+    background-color: white;
+    padding: 2rem;
+}
+
+
+.card{
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.left{
+    max-width: 300px;
+
+    width: 200px;
+}
+.left div{
+    height: 200px;
+    width: 100%;
+    border: 1px dashed #00AC4F;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camera{
+    font-size: 2.4rem;
+    color: #ccc;
+}
+
+.left:hover{
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.right{
+    flex: 1;
+}
+
+
+
+/* .formC2 div input{
+    border-bottom: 1px solid #97979A;
+} */
+
+/* .formC2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem ;
+} */
+
+/* .formC2 div{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+
+    
+}
+.formC2 div p{
+    font-size: 1.4rem;
+
+} */
+
+.innerc2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.innerc2 div{
+    display: flex;
+    align-items: center;
+
+}
+
+.innerc2 div input{
+    border-bottom: 1px solid #ccc;
+    max-width: 100px;
+    display: block;
+    font-family: inherit;
+}
+
+.innerc2 div p{
+    font-family: 'Poppins';
+    font-weight: 500;
+  
+}
+
+.formC1{
+    margin-bottom: 4rem;
+    display: flex;
+    /* gap: 1rem; */
+    align-items: center;
+}
+.formC1 input{
+border-bottom: 1px solid #97979A;
+width: 100%;
+}
+
+.formC1 p{
+    font-size: 1.4rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.list{
+    margin-top: 4rem;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+   
+}
+
+
+.listL div{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.listL div span{
+    font-size: 1.6rem;
+    color: #595959;
+}
+
+.listR button{
+    border: none;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    color: white;
+    background-color: #DD9A19;
+}
+.listR button:hover{
+    cursor: pointer;
+}
+
+.lower{
+display: flex;
+align-items: center;
+gap: 15rem;
+    width: 100%;
+    padding: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.item p{
+    color: #595959;
+    font-size: 1.4rem;
+}

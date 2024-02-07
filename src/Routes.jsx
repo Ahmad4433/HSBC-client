@@ -22,6 +22,9 @@ import UserOutlet from "./ahmad-work/super-component/user-outlet/UserOutlet";
 import AdminOutlet from "./ahmad-work/super-component/admin-outlet/AdminOutlet";
 import SuperCom from "./ahmad-work/super-component/SuperCom";
 import Company from "./ahmad-work/admin/admin/company/Company";
+import Calendar from './ahmad-work/admin/getover-your-self/calender/Calendar'
+import CollectionRoute from './ahmad-work/admin/admin/collection/Collection'
+
 
 //this is for test we will delete letter
 
@@ -125,6 +128,8 @@ const adminCode = localStorage.getItem('userCode')
               />
               <Route path="/payment" element={<PaymentRoute />} />
               <Route path="/create/company" element={<Company/>}  />
+              <Route path="/getover/yourself" element={<Calendar/>} />
+              <Route path="/collection" element={<CollectionRoute/>} />
               </Route>
           </Route>
              

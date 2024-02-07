@@ -10,7 +10,6 @@ import Push from "./customer-push/Push";
 import PersonalDoc from "./company-phas2/personal-doc/PersonalDoc";
 import Dashboard from "./company-phas2/dashboard/Dashboard";
 import Experience from "./company-phas2/experience/Experience";
-import { useReducedMotion } from "framer-motion";
 const Company = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [track, setTrack] = useState(0);
@@ -150,6 +149,7 @@ const Company = () => {
           {track === 9 && (
             <div>
               <Experience />
+
             </div>
           )}
         </div>
