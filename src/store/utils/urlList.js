@@ -1,9 +1,9 @@
 const urlList = () => {
   const list = {
 
-signupUser:'http://localhost:8000/user/register',
-verifyUser:'http://localhost:8000/user/verify',
-loginUser:'http://localhost:8000/user/login'
+signupUser:'https://hsbc-server-73ydtt1.vercel.app/user/register',
+verifyUser:'https://hsbc-server-73ydtt1.vercel.app/user/verify',
+loginUser:'https://hsbc-server-73ydtt1.vercel.app/user/login'
 
   };
   return list;
