@@ -90,7 +90,7 @@ const sidebarMoreRoutes = [
   {
     icon: company,
     text: "Company",
-    to: "/admin/company",
+    to: "/admin/create/company",
   },
 ];
 

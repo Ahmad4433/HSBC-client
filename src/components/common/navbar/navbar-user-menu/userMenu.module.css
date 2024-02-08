@@ -1,0 +1,72 @@
+
+
+.main{
+    position: absolute;
+    width: 160px;
+    right: 0rem;
+    background-color: white;
+    padding: 2rem 0.6rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.profile{
+    background-color: #FF0000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.image{
+    height: 26px;
+    width: 26px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.name{
+    color: white;
+    font-size: 1.4rem;
+}
+.item{
+       display: flex;
+    align-items: center;
+justify-content: space-between;
+
+   
+}
+
+.other{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.item span{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.icon{
+    font-size: 2.4rem;
+    color: black;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:active{
+    color: black;
+}
+
+.item:hover{
+    cursor: pointer;
+
+}

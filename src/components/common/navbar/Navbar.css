@@ -1,0 +1,24 @@
+
+
+
+
+
+.nav-user-info{
+display: none;
+
+}
+
+.nav-user-menu-sec:hover .nav-user-info{
+display: block;
+   
+}
+
+.nav-user-menu-sec:hover{
+    cursor: pointer;
+}
+
+@media(max-width:756px){
+    .nav-user-info{
+        display: none;
+    }
+}

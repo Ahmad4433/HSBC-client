@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { bell, logo, mail, profile } from "../../../assets/user/navbar";
-
+import './Navbar.css'
 import NavbarItem from "./NavbarItem";
 import { Container } from "../../features";
 import { Link } from "react-router-dom";
 import { navbarRoutes } from "../../../data/routes";
+import UserMenu from "./navbar-user-menu/UserMenu";
 
 // UUID for Random Ids
 
@@ -47,9 +48,12 @@ const Navbar = () => {
               <div className="navbar-container-profile">
                 <img src={bell} alt="icon" />
                 <img src={mail} alt="icon" />
-                <Link to="/account/step1">
+                <div className="nav-user-menu-sec" >
                   <img src={profile} alt="icon" />
-                </Link>
+                  <div className='nav-user-info'  >
+                    <UserMenu/>
+                  </div>
+                </div>
 
                 <div className="navbar-container-profile-menubar">
                   <RiMenuFoldLine onClick={handleMenuFunction} />

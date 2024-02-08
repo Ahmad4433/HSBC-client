@@ -10,7 +10,9 @@ import Push from "./customer-push/Push";
 import PersonalDoc from "./company-phas2/personal-doc/PersonalDoc";
 import Dashboard from "./company-phas2/dashboard/Dashboard";
 import Experience from "./company-phas2/experience/Experience";
+import {useNavigate} from 'react-router-dom'
 const Company = () => {
+  const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(true);
   const [track, setTrack] = useState(0);
   useEffect(() => {
@@ -26,6 +28,7 @@ const Company = () => {
   const openHandler = (event) => {
     if (event.key === "Escape") {
       setIsOpen(false);
+      navigate('/admin/dashboard')
     }
   };
 
