@@ -126,7 +126,7 @@ const adminCode = localStorage.getItem('userCode')
                 path="/admin/client-prospect"
                 element={<ClientAndProspect />}
               />
-              <Route path="/payment" element={<PaymentRoute />} />
+              <Route path="/admin/payment" element={<PaymentRoute />} />
               <Route path="/admin/create/company" element={<Company/>}  />
               <Route path="/admin/getover/yourself" element={<Calendar/>} />
               <Route path="/admin/collection" element={<CollectionRoute/>} />
