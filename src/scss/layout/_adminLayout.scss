@@ -6,6 +6,7 @@
       background: #daffdf;
       height: 100vh;
       position: fixed;
+      overflow-y: scroll;
       &::-webkit-scrollbar {
         width: 10px;
       }
@@ -46,4 +47,69 @@
       }
     }
   }
+}
+
+.admin-profile-sec{
+  background-color: white;
+  border-radius: 28px;
+  height: 64px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: height 0.3s;
+}
+
+.click{
+ transition: height 0.3s;
+  background-color: white;
+  border-radius: 28px;
+  height: 140px;
+ margin-bottom: 2rem;
+  
+}
+
+
+.admin-profile{
+border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 1.6rem;
+ 
+
+}
+
+.admin-name{
+  font-size: 2rem;
+  font-family: 'Poppins';
+}
+
+.admin-profile:hover{
+  cursor: pointer;
+}
+
+.admin-profile-logout-section{
+display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+
+}
+
+
+.admin-logout-icon{
+  font-size:2.6rem;
+  color: #333;
+}
+
+.admin-logout-title{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.admin-profile-logout-section:hover{
+  background-color: #f8f8f8;
+  cursor: pointer;
+
 }
