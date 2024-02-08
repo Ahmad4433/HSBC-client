@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { logo } from "../../../assets/user/navbar";
@@ -14,11 +14,12 @@ import {
 
 const Sidebar = () => {
   const navigate = useNavigate()
-
 const [isLogout,setIsLogout] = useState(false)
+
 
 const clickHandler = ()=>{
   setIsLogout(!isLogout)
+
 }
 
 
@@ -72,7 +73,7 @@ const logoutHandler = ()=>{
               <div onClick={logoutHandler} className="admin-profile-logout-section" >
           
                 <p className="admin-logout-title" >logout</p>
-                <CiLogout className="admin-logout-icon" />
+                <CiLogout  className="admin-logout-icon" />
               </div>
             </div>
           </div>
