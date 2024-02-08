@@ -28,6 +28,7 @@ const Company = () => {
   const openHandler = (event) => {
     if (event.key === "Escape") {
       setIsOpen(false);
+      document.body.style.overflow = 'auto'
       navigate('/admin/dashboard')
     }
   };
