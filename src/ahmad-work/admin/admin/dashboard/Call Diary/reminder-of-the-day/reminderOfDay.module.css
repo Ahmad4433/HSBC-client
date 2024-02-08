@@ -4,7 +4,6 @@
 
 
 .section{
-    padding: 4rem 4rem;
     background-color: white;
     border-radius: 12px;
     
@@ -15,29 +14,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 4rem;
-        max-width: 50%;
     font-family: 'Poppins';
+    padding: 2rem 1rem;
 }
 
 .title{
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: 'Poppins';
-    letter-spacing: 0.6px;
+    letter-spacing: 0.4px;
 }
 
 
-.range{
-    
+.range{   
     font-size: 1.7rem;
     font-family: 'Poppins';
-    padding: 1rem 2rem;
+
 }
 
 .select{
     background-color: #F9FBFF ;
-    padding: 1rem 2rem;
+    padding: 1rem ;
     border-radius: 12px;
     display: flex;
     align-items: center;

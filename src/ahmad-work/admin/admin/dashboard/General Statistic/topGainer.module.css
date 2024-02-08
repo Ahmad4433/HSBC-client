@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Poppins&family=Work+Sans&display=swap");
 
+.section{
+
+
+width: 100%;
+/* display: flex;
+align-items: center;
+justify-content: center; */
+padding: 0rem  2rem;
+
+}
+
 .card {
   background-color:#0F993E;
   border-radius: 20px;
@@ -7,16 +18,19 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
-  padding: 4rem;
+  padding: 4rem 1rem;
   gap: 2rem;
   color: white;
+
+ 
+ 
 }
 
 .title {
   color: white;
   font-family: "Poppins";
   font-size: 1.4rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
 }
 
 .icon {
@@ -33,7 +47,6 @@
 
 .card > div {
   width: 100%;
-
   text-align: right;
 }
 

@@ -1,29 +1,29 @@
 .main {
   background-color: #f2efff;
-  min-height: 100vh;
+margin-bottom: 4rem;
 }
 
-@media (min-width: 756px) {
-  .level {
-    display: grid;
-    gap: 2rem;
-    padding: 4rem 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
-    justify-content: center;
-  }
+
+.level{
+/* display: grid;
+grid-template-columns: 33% 33% 33%; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+  padding: 2rem 0;
+
+  width: 100%;
 }
 
-.level {
-  display: grid;
-  gap: 3rem;
-  padding: 2rem;
+.item{
+  width: 100%;
 }
-
 @media(min-width:756px){
     .reminder {
+      max-width: 100%;
         display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: 33%;
+       grid-template-columns: 2fr 1fr 2fr;
         padding: 1rem;
         gap: 1rem;
       }
@@ -32,6 +32,6 @@
 
 .reminder{
     display: grid;
-    gap: 3rem;
-    padding: 1rem;
+    /* gap: 3rem;
+    padding: 1rem; */
 }

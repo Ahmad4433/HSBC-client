@@ -8,27 +8,34 @@ import ToggleBar from "./ToggleBar";
 import Online from "../Call Diary/online/Online";
 import AdvanceSrd from "../Call Diary/advance-of-srd-fund/AdvanceSrc";
 const Statistic = () => {
-  const [toggle,setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
 
-
-  const toggleHandler  = (value)=>{
-    setToggle(value)
-  }
+  const toggleHandler = (value) => {
+    setToggle(value);
+  };
 
   return (
     <div className={style.main}>
-      <ToggleBar onSave = {toggleHandler} />
-      {toggle ? <div className={style.level}>
+      <ToggleBar onSave={toggleHandler} />
+      {toggle ? (
+        <div className={style.level}>
+        <div className={style.item} >
         <Total />
-        <TopGainer />
-        <TopLosers />
-      </div>: <div className={style.reminder} >
-        <ReminderOfDay />
-        <Online />
-        <AdvanceSrd />
-      </div>}
-
-      
+        </div>
+       <div className={style.item} >
+       <TopGainer />
+       </div>
+    <div className={style.item} >
+    <TopLosers />
+    </div>
+        </div>
+      ) : (
+        <div className={style.reminder}>
+          <ReminderOfDay />
+          <Online />
+          <AdvanceSrd />
+        </div>
+      )}
     </div>
   );
 };

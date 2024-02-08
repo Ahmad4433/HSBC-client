@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import React from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Label } from "recharts";
 import style from "./online.module.css";
@@ -14,10 +13,9 @@ const Online = () => {
   return (
     <div className={style.main}>
       <div className={style.section}>
-
-        <div className={style.head} >
-            <p className={style.title} >Online</p>
-            <p className={style.value} >Customers Activity</p>
+        <div className={style.head}>
+          <p className={style.title}>Online</p>
+          <p className={style.value}>Customers Activity</p>
         </div>
         <div className={style.chart}>
           <ResponsiveContainer width="100%" height={300}>
@@ -37,8 +35,8 @@ const Online = () => {
                     fontSize: "1rem",
                     fontWeight: "700",
                     fontFamily: "Poppins",
-                    whiteSpace:'wrap',
-                    color:'black'
+                    whiteSpace: "wrap",
+                    color: "black",
                   }}
                   value="65%
 Total Online Member"
