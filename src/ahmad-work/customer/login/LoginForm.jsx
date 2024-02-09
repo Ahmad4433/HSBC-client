@@ -82,7 +82,8 @@ const LoginForm = () => {
   });
 
   return (
-    <div className={style.main}>
+    <div className={style.container} >
+      <div className={style.main}>
       {isLoading && (
         <div className={style.model}>
           <CircularProgress color="secondary" />
@@ -108,7 +109,7 @@ const LoginForm = () => {
           </div>
           <div>
             <img src={calendar} className={style.iconImg} />
-            <p className={style.tt}>Sign Up</p>
+            <p className={style.tt}>Login</p>
           </div>
         </div>
         <div>
@@ -210,6 +211,7 @@ const LoginForm = () => {
           {<div className={style.httpErr}>{error}</div>}
         </Alert>
       </Snackbar>
+    </div>
     </div>
   );
 };
