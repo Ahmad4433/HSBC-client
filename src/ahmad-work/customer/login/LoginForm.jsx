@@ -19,6 +19,11 @@ import usercircular from "../../assets/user-circle.png";
 import thumb from "../../assets/thumb.png";
 import blur from "../../assets/blur.png";
 import { Switch } from "@mui/material";
+import insta from "../../assets/insta.png";
+import twitter from "../../assets/twitter.png";
+import pin from "../../assets/pin.png";
+import git from "../../assets/git.png";
+import xbox from "../../assets/xbox.png";
 
 const LoginForm = () => {
   const [res, setRes] = useState();
@@ -82,136 +87,159 @@ const LoginForm = () => {
   });
 
   return (
-    <div className={style.container} >
+    <div className={style.container}>
       <div className={style.main}>
-      {isLoading && (
-        <div className={style.model}>
-          <CircularProgress color="secondary" />
-        </div>
-      )}
+        {isLoading && (
+          <div className={style.model}>
+            <CircularProgress color="secondary" />
+          </div>
+        )}
 
-      <div className={style.bgHeader}>
-        <div>
-          <h2 className={style.logoT}>HSBC</h2>
+        <div className={style.bgHeader}>
+          <div>
+            <h2 className={style.logoT}>HSBC</h2>
+          </div>
+          <div className={style.bgInner}>
+            <div>
+              <RiDashboardFill className={style.dashIcon} />
+              <p className={style.tt}>Dashboard</p>
+            </div>
+            <div>
+              <img src={usercircular} className={style.iconImg} />
+              <p className={style.tt}>Profile</p>
+            </div>
+            <div>
+              <img src={duplicate} className={style.iconImg} />
+              <p className={style.tt}>Sign Up</p>
+            </div>
+            <div>
+              <img src={calendar} className={style.iconImg} />
+              <p className={style.tt}>Login</p>
+            </div>
+          </div>
+          <div>
+            <p className={style.download}>FREE DOWNLOAD</p>
+          </div>
         </div>
-        <div className={style.bgInner}>
-          <div>
-            <RiDashboardFill className={style.dashIcon} />
-            <p className={style.tt}>Dashboard</p>
-          </div>
-          <div>
-            <img src={usercircular} className={style.iconImg} />
-            <p className={style.tt}>Profile</p>
-          </div>
-          <div>
-            <img src={duplicate} className={style.iconImg} />
-            <p className={style.tt}>Sign Up</p>
-          </div>
-          <div>
-            <img src={calendar} className={style.iconImg} />
-            <p className={style.tt}>Login</p>
-          </div>
-        </div>
-        <div>
-          <p className={style.download}>FREE DOWNLOAD</p>
-        </div>
-      </div>
 
-      <div className={style.section}>
-        <div className={style.card}>
-          <div className={style.navigate}>
-            <p>Already have an account?</p>
-            <Link to={"/signup"}>Sign up!</Link>
-          </div>
-          <div className={style.item1}>
-            <p className={style.greating}>Welcome Back</p>
-            <p className={style.loginTitle}>Login into your account</p>
-            <form onSubmit={formik.handleSubmit}>
-              <div className={style.formG}>
-                <div>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    className={`${style.input} ${
-                      formik.touched.email && formik.errors.email
-                        ? style.error
-                        : ""
-                    }`}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.email}
-                  />
-                  {formik.touched.email && formik.errors.email && (
-                    <div className={style.errorText}>{formik.errors.email}</div>
-                  )}
+        <div className={style.section}>
+          <div className={style.card}>
+            <div className={style.navigate}>
+              <p>Already have an account?</p>
+              <Link to={"/signup"}>Sign up!</Link>
+            </div>
+            <div className={style.item1}>
+              <p className={style.greating}>Welcome Back</p>
+              <p className={style.loginTitle}>Login into your account</p>
+              <form onSubmit={formik.handleSubmit}>
+                <div className={style.formG}>
+                  <div>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      className={`${style.input} ${
+                        formik.touched.email && formik.errors.email
+                          ? style.error
+                          : ""
+                      }`}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.email}
+                    />
+                    {formik.touched.email && formik.errors.email && (
+                      <div className={style.errorText}>
+                        {formik.errors.email}
+                      </div>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="Password"
+                      className={`${style.input} ${
+                        formik.touched.password && formik.errors.password
+                          ? style.error
+                          : ""
+                      }`}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.password}
+                    />
+                    {formik.touched.password && formik.errors.password && (
+                      <div className={style.errorText}>
+                        {formik.errors.password}
+                      </div>
+                    )}
+                  </div>
                 </div>
 
-                <div>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Password"
-                    className={`${style.input} ${
-                      formik.touched.password && formik.errors.password
-                        ? style.error
-                        : ""
-                    }`}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.password}
-                  />
-                  {formik.touched.password && formik.errors.password && (
-                    <div className={style.errorText}>
-                      {formik.errors.password}
-                    </div>
-                  )}
+                <div className={style.remind}>
+                  <Switch size="small" />
+                  <span className={style.rTitle}>Remember me</span>
+                  <span className={style.recov}>Recover Password</span>
                 </div>
-              </div>
 
-              <div className={style.remind}>
-                <Switch size="small" />
-                <span className={style.rTitle}>Remember me</span>
-                <span className={style.recov}>Recover Password</span>
-              </div>
+                <div onClick={btnHadler} className={style.action}>
+                  <button ref={btnRef} className={style.button} type="submit">
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
 
-              <div onClick={btnHadler} className={style.action}>
-                <button ref={btnRef} className={style.button} type="submit">
-                  Login
-                </button>
+          <div className={style.item2}>
+            <div className={style.blurP}>
+              <div className={style.green}>
+                <img src={thumb} /> <span>Top Notch Stock Resources</span>
               </div>
-            </form>
+              <p className={style.stock}>
+                Today, we create innovative solutions to the challenges that
+                consumers face in both their everyday lives and events.
+              </p>
+            </div>
           </div>
         </div>
-
-        <div className={style.item2}>
-          <div className={style.blurP}>
-            <div className={style.green} ><img src={thumb} /> <span  >Top Notch Stock Resources</span></div>
-            <p className={style.stock} >
-              Today, we create innovative solutions to the challenges that
-              consumers face in both their everyday lives and events.
-            </p>
+        <div className={style.footer}>
+          <div className={style.link}>
+            <Link>Company </Link>
+            <Link>About Us </Link>
+            <Link>Team </Link>
+            <Link>Products </Link>
+            <Link>Blog </Link>
+            <Link>Pricing </Link>
           </div>
+          <div className={style.logos}>
+            <img src={xbox} />
+            <img src={pin} />
+            <img src={twitter} />
+            <img src={insta} />
+            <img src={git} />
+          </div>
+          <p className={style.privacy}>
+            Copyright © 2024 Soft by Raden Creation
+          </p>
         </div>
-      </div>
-
-      <Snackbar
-        open={error}
-        onClose={() => dispatch(uiActions.showError(null))}
-        autoHideDuration={3000}
-        anchorOrigin={{ vertical: "top", horizontal: "center" }}
-      >
-        <Alert
+        <Snackbar
           open={error}
-          severity="error"
           onClose={() => dispatch(uiActions.showError(null))}
+          autoHideDuration={3000}
+          anchorOrigin={{ vertical: "top", horizontal: "center" }}
         >
-          {<div className={style.httpErr}>{error}</div>}
-        </Alert>
-      </Snackbar>
-    </div>
+          <Alert
+            open={error}
+            severity="error"
+            onClose={() => dispatch(uiActions.showError(null))}
+          >
+            {<div className={style.httpErr}>{error}</div>}
+          </Alert>
+        </Snackbar>
+      </div>
     </div>
   );
 };

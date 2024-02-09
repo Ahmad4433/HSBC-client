@@ -341,3 +341,53 @@ padding: 3rem 2rem;
 }
 
 
+
+.footer{
+    background-color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+ 
+}
+
+.link a{
+    font-size: 1.6rem;
+    color: #8392AB;
+    
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.privacy{
+    text-align: center;
+    width: 100%;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #8392AB;
+}
+
+@media(max-width:756px){
+    .item2{
+        display: none;
+    }
+    .section{
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    .bgHeader{
+        display: none;
+    }
+}
