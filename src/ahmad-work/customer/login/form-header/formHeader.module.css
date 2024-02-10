@@ -1,109 +1,101 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.logoT {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: white;
+}
 
-.header{
+.headerInner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.headerInner div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerInner div:hover {
+  cursor: pointer;
+}
+
+.headerInner div p {
+  color: white;
+  font-size: 1.6rem;
+}
+.dashIcon {
+  color: white;
+  font-size: 2rem;
+}
+
+.download {
+  padding: 1rem 2rem;
+  background-color: white;
+  font-size: 1.6rem;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.download:hover {
+  cursor: pointer;
+}
+
+.mobileH {
+  display: none;
+}
+
+@media (max-width: 756px) {
+  .download,
+  .logoT {
+    display: none;
+  }
+
+  .mobileH {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-flex-wrap: wrap;  
-}
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
 
-
-.logoT{
-    font-size: 2.6rem;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    color: white;
-}
-
-.headerInner{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    
-}
-
-.headerInner div{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.headerInner div:hover{
-    cursor: pointer;
-}
-
-.headerInner div p{
-    color: white;
-    font-size: 1.6rem;
-}
-.dashIcon{
-    color: white;
-    font-size: 2rem;
-}
-
-.download{
+  .mobileH p {
     padding: 1rem 2rem;
     background-color: white;
-    font-size: 1.6rem;
-    border-radius: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 18px;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .mobileH h2 {
+    color: white;
     font-weight: 600;
-}
+    letter-spacing: 0.6px;
+    font-size: 2.4rem;
+  }
 
-.download:hover{
-    cursor: pointer;
-}
-
-
-.mobileH{
-    display: none;
-}
-
-@media(max-width:756px)
-
-{
-    .download,.logoT{
-        display: none;
-    }
-
-    .mobileH{
-       width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .mobileH p{
-        padding: 1rem 2rem;
-        background-color: white;
-       border-radius: 18px;
-       font-size: 1.4rem;
-       font-weight: 500;
-    }
-    .mobileH h2{
-        color: white;
-        font-weight: 600;
-        letter-spacing: 0.6px;
-        font-size: 2.4rem;
-    }
-
-    .headerInner{
+  .headerInner {
     gap: 1rem;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0 1rem;
-    }
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+  }
 
-.download{
+  .download {
     padding: 0;
     margin: 0;
     font-size: 1.4rem;
     padding: 1rem 1.6rem;
-
-}
-
+  }
 }

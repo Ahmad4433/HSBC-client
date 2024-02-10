@@ -1,0 +1,82 @@
+
+
+.main{
+    width: 100%;
+
+}
+
+
+.formG div{
+    width: 100%;
+    margin-bottom: 3rem;
+
+  
+}
+.formG div input{
+    width: 100%;
+    background-color: inherit;
+    border: 1px solid #D9D9D9;
+    padding: 2rem 1rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: white;
+ 
+}
+
+.remind{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+}
+
+.remind > span{
+font-size: 1.6rem;
+font-weight: 500;
+color: #D93F21;
+}
+
+.remind div span{
+    font-weight: 500;
+    font-size: 1.4rem;
+    
+}
+
+@media(max-width:756px){
+    .remind{
+        padding: 0;
+    }
+}
+
+.action{
+ width: 100%;
+
+
+}
+.button{
+    padding: 1.6rem;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.errorText{
+    color: red;
+    font-size: 1.4rem;
+
+  
+}
+

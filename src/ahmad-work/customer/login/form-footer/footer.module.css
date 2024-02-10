@@ -1,0 +1,33 @@
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+.link{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.link a{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #8392AB;
+}
+
+.logos{
+    display: flex;
+    gap: 2rem;
+}
+
+.privacy{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #8392AB;
+}

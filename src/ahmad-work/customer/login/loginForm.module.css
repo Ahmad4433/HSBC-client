@@ -8,21 +8,143 @@
   background-image: url("../../assets/loginbg.png");
   background-repeat: no-repeat;
   min-height: 100vh;
-padding: 2rem;
+  padding: 2rem;
+}
+
+.form {
+  background-color: #f0f2f5;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.formItems {
+  /* padding: 2rem; */
+  display: flex;
+  overflow: hidden;
+}
+
+.item1 {
+  flex: 1;
+
+
+}
+
+.item2 {
+  background-image: url("../../assets/loginimage.jpg");
+  width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+
+.item2Inner{
+    background-image: url('../../assets/blur.png');
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 2rem;
+   
+}
+
+.detail{
+    color: white;
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 1.6;
+
+}
+
+.thumb{
+    background-color: #20DC49;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.navigator {
+  width: 100%;
+  padding: 2rem;
+}
+
+.titles{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.t1{
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 0.6px;
+    margin-bottom: 3rem;
+}
+.t2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
 }
 
 
 
-@media(max-width:756px){
- 
-.main{
+.bars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+
+.bars span{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.bar{
+    width: 50%;
+    height: 1px;
+    background-color: #DBDBDB;
+}
+
+.controll{
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+
+
+@media (max-width: 756px) {
+  .main {
     padding: 0;
     margin: 0;
-}
+  }
 
-.background{
+  .background {
     padding: 1rem;
-}
+  }
+  .item2{
+    display: none;
+  }
+
+  .form{
+    width: 100%;
+    display: block;
+  }
+  .item1{
+    width: 100%;
+  }
 
 
 }
+

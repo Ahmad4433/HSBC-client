@@ -10,6 +10,13 @@ import { Link } from "react-router-dom";
 import { CircularProgress, Snackbar, Alert } from "@mui/material";
 import { uiActions } from "../../../store/slices/ui-slice";
 
+
+import SignupFormControll from "./form-contoll-signup/SignupFormControll";
+import Alternative from "../login/login-alternative/Alternative";
+import FormHeader from "../login/form-header/FormHeader";
+import FormFooter from "../login/form-footer/FormFooter";
+import FormNavigator from "../login/form-navigator/FormNavigator";
+import thumb from '../../assets/thumb.png'
 const Signup = () => {
   const list = urlList();
   const dispatch = useDispatch();
@@ -63,112 +70,62 @@ const Signup = () => {
   }
 
   return (
-    <div className={style.main}>
-      {isLoading && (
-        <div className={style.model}>
-          <CircularProgress color="secondary" />
-        </div>
-      )}
+   <div className={style.main} >
 
-      <div className={style.section}>
-        <div className={style.navigate}>
-          <p>Don't have an account?</p>
-          <Link to={"/"}>Login!</Link>
-        </div>
-        <div className={style.card}>
-          <div className={style.item1}>
-            <p className={style.greating}>Welcome To HSBC</p>
-            <p className={style.loginTitle}>Sign up to continue</p>
-            <form onSubmit={formik.handleSubmit}>
-              <div className={style.formG}>
-                <div>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    className={`${style.input} ${
-                      formik.touched.name && formik.errors.name
-                        ? style.error
-                        : ""
-                    }`}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.name}
-                  />
-                  {formik.touched.name && formik.errors.name && (
-                    <div className={style.errorText}>{formik.errors.name}</div>
-                  )}
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    className={`${style.input} ${
-                      formik.touched.email && formik.errors.email
-                        ? style.error
-                        : ""
-                    }`}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.email}
-                  />
-                  {formik.touched.email && formik.errors.email && (
-                    <div className={style.errorText}>{formik.errors.email}</div>
-                  )}
-                </div>
+<div className={style.background}>
+        <FormHeader />
 
-                <div>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Password"
-                    className={`${style.input} ${
-                      formik.touched.password && formik.errors.password
-                        ? style.error
-                        : ""
-                    }`}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.password}
-                  />
-                  {formik.touched.password && formik.errors.password && (
-                    <div className={style.errorText}>
-                      {formik.errors.password}
-                    </div>
-                  )}
-                </div>
+        <div className={style.form}>
+          <div className={style.formItems}>
+            <div className={style.item1}>
+              <div className={style.navigator}>
+                <FormNavigator link='login' title='Login' title2='Have already account ' />
+              </div>
+              <div className={style.titles}>
+                <p className={style.t1}>Welcome</p>
+                <p className={style.t2}>Sign up to continue</p>
+              </div>
+              <div className={style.alternative}>
+                <Alternative />
+              </div>
+              <div className={style.bars}>
+                <div className={style.bar}></div>
+                <span>Or</span>
+                <div className={style.bar}></div>
               </div>
 
-              <div onClick={btnHadler} className={style.action}>
-                <button ref={btnRef} className={style.button} type="submit">
-                  Sign up
-                </button>
+              <div className={style.controll}>
+              <SignupFormControll/>
               </div>
-            </form>
-          </div>
-          <div className={style.item2}>
-            <div className={style.image}>
-              <img src={loginimagr} alt="Login" className={style.img} />
+            </div>
+            <div className={style.item2}>
+              <div className={style.item2Inner}>
+                <div className={style.thumb} >
+                  <img src={thumb} />
+                  <p>Top Notch Stock Resources</p>
+                </div>
+                <p className={style.detail}>
+                  Today, we create innovative solutions to the challenges that
+                  consumers face in both their everyday lives and events.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Snackbar
-        autoHideDuration={6000}
-        open={test || error}
-        onClose={closeHandler}
-        anchorOrigin={{ vertical: "top", horizontal: "center" }}
-      >
-        <Alert variant="filled" severity={error ? 'warning' :"info"} onClose={closeHandler}>
-          <div className={style.res}>{test || error}</div>
-        </Alert>
-      </Snackbar>
-    </div>
+      <div className={style.footer} >
+        <FormFooter/>
+      </div>
+
+   </div>
   );
 };
 
 export default Signup;
+
+
+
+
+
+
+

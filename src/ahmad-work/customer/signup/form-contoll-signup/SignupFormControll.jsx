@@ -1,28 +1,26 @@
-import React from "react";
-import * as Yup from "yup";
+import React,{useState,useEffect,useRef} from 'react'
 import { useFormik } from "formik";
+import * as Yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
-import httpAction from "../../../../store/actions/httpAction";
-import urlList from "../../../../store/utils/urlList";
-import { useNavigate } from "react-router-dom";
-import { useRef, useState, useEffect } from "react";
-import style from "./formControll.module.css";
-import { Switch } from "@mui/material";
-import { loginActions } from "../../../../store/slices/login-slice";
-import InfoMessage from "../../../ui-components/snackbar/InfoMessage";
-import Loading from "../../../ui-components/loading-spinner/Loading";
-const FormControl = () => {
-  const [res, setRes] = useState();
+import httpAction from '../../../../store/actions/httpAction';
+import urlList from '../../../../store/utils/urlList';
+import Loading from '../../../ui-components/loading-spinner/Loading';
+import InfoMessage from '../../../ui-components/snackbar/InfoMessage';
+import style from './signupFormcontroll.module.css'
+
+const SignupFormControll = () => {
+
+
+    const list = urlList();
   const dispatch = useDispatch();
-  const list = urlList();
   const isLoading = useSelector((state) => state.ui.loading);
   const error = useSelector((state) => state.ui.error);
-  const navigate = useNavigate();
-
+  const [test, setTest] = useState(null);
   const btnRef = useRef();
   const initialValues = {
     email: "",
     password: "",
+    name: "",
   };
 
   const btnHadler = () => {
@@ -34,37 +32,23 @@ const FormControl = () => {
     password: Yup.string()
       .min(8, "Password must be at least 8 characters")
       .required("Required"),
+    name: Yup.string().required("Required"),
   });
 
   const onSubmit = async (values) => {
-    // login logic here
+    // Your login logic here
     const data = {
-      url: list.loginUser,
+      url: list.signupUser,
       method: "POST",
-      body: { email: values.email, password: values.password },
+      body: {
+        name: values.name,
+        email: values.email,
+        password: values.password,
+      },
     };
-
     const result = await dispatch(httpAction(data));
-    setRes(result);
+    setTest(result?.message);
   };
-
-  useEffect(() => {
-    if (res) {
-      localStorage.setItem("accToken", res.token.accessToken);
-      localStorage.setItem("refToken", res.token.refreshToken);
-      localStorage.setItem("userName", res.userInfo.userName);
-      localStorage.setItem("userCode", res.userInfo.role);
-      dispatch(loginActions.loginStatus(true));
-      if (res.userInfo.role === 1) {
-        navigate("/admin/dashboard");
-        dispatch(loginActions.setUserCode(1));
-      }
-      if (res.userInfo.role === 2) {
-        navigate("/");
-        dispatch(loginActions.setUserCode(2));
-      }
-    }
-  }, [res]);
 
   const formik = useFormik({
     initialValues,
@@ -72,11 +56,38 @@ const FormControl = () => {
     onSubmit,
   });
 
+
+  const closeHandler = ()=>{
+    setTest(null)
+    dispatch(uiActions.showError(null))
+  }
+
+
+
   return (
     <div className={style.main}>
         {isLoading && <Loading/>}
       <form onSubmit={formik.handleSubmit}>
         <div className={style.formG}>
+        <div>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    className={`${style.input} ${
+                      formik.touched.name && formik.errors.name
+                        ? style.error
+                        : ""
+                    }`}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.name}
+                  />
+                  {formik.touched.name && formik.errors.name && (
+                    <div className={style.errorText}>{formik.errors.name}</div>
+                  )}
+                </div>
           <div>
             <input
               type="email"
@@ -116,23 +127,15 @@ const FormControl = () => {
           </div>
         </div>
 
-        <div className={style.remind}>
-          <div>
-                    <Switch size="small" />
-            <span className={style.rTitle}>Remember me</span>
-          </div>
-          <span className={style.recov}>Recover Password</span>
-        </div>
-
-        <div onClick={btnHadler} className={style.action}>
+           <div onClick={btnHadler} className={style.action}>
           <button ref={btnRef} className={style.button} type="submit">
-            Login
+            Sign Up
           </button>
         </div>
       </form>
       <InfoMessage error={error} />
     </div>
-  );
-};
+  )
+}
 
-export default FormControl;
+export default SignupFormControll

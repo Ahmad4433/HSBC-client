@@ -5,6 +5,7 @@ import git from '../../../assets/git.png'
 import twitter from '../../../assets/twitter.png'
 import insta from '../../../assets/insta.png'
 import pin from '../../../assets/pin.png'
+import style from './footer.module.css'
 const FormFooter = () => {
   return (
     <div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-const FormNavigator = () => {
+import style from './formNavigator.module.css'
+const FormNavigator = ({link,title,title2}) => {
   return (
     <div className={style.navigate}>
-    <p>Already have an account?</p>
-    <Link to={"/signup"}>Sign up!</Link>
+    <p>{title2}?</p>
+    <Link to={`/${link}`}>{title}!</Link>
   </div>
   )
 }
