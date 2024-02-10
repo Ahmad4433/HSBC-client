@@ -83,7 +83,7 @@ const Signup = () => {
               </div>
               <div className={style.titles}>
                 <p className={style.t1}>Welcome</p>
-                <p className={style.t2}>Sign up to continue</p>
+                <p className={style.t2}>Continue with</p>
               </div>
               <div className={style.alternative}>
                 <Alternative />
