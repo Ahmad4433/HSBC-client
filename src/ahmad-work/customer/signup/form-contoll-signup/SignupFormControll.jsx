@@ -1,17 +1,16 @@
-import React,{useState,useEffect,useRef} from 'react'
+import React, { useState, useEffect, useRef } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
-import httpAction from '../../../../store/actions/httpAction';
-import urlList from '../../../../store/utils/urlList';
-import Loading from '../../../ui-components/loading-spinner/Loading';
-import InfoMessage from '../../../ui-components/snackbar/InfoMessage';
-import style from './signupFormcontroll.module.css'
+import httpAction from "../../../../store/actions/httpAction";
+import urlList from "../../../../store/utils/urlList";
+import Loading from "../../../ui-components/loading-spinner/Loading";
+import InfoMessage from "../../../ui-components/snackbar/InfoMessage";
+import style from "./signupFormcontroll.module.css";
+import { Snackbar, Alert } from "@mui/material";
 
 const SignupFormControll = () => {
-
-
-    const list = urlList();
+  const list = urlList();
   const dispatch = useDispatch();
   const isLoading = useSelector((state) => state.ui.loading);
   const error = useSelector((state) => state.ui.error);
@@ -56,38 +55,33 @@ const SignupFormControll = () => {
     onSubmit,
   });
 
-
-  const closeHandler = ()=>{
-    setTest(null)
-    dispatch(uiActions.showError(null))
-  }
-
-
+  const closeHandler = () => {
+    setTest(null);
+    dispatch(uiActions.showError(null));
+  };
 
   return (
     <div className={style.main}>
-        {isLoading && <Loading/>}
+      {isLoading && <Loading />}
       <form onSubmit={formik.handleSubmit}>
         <div className={style.formG}>
-        <div>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    className={`${style.input} ${
-                      formik.touched.name && formik.errors.name
-                        ? style.error
-                        : ""
-                    }`}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.name}
-                  />
-                  {formik.touched.name && formik.errors.name && (
-                    <div className={style.errorText}>{formik.errors.name}</div>
-                  )}
-                </div>
+          <div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              className={`${style.input} ${
+                formik.touched.name && formik.errors.name ? style.error : ""
+              }`}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.name}
+            />
+            {formik.touched.name && formik.errors.name && (
+              <div className={style.errorText}>{formik.errors.name}</div>
+            )}
+          </div>
           <div>
             <input
               type="email"
@@ -127,15 +121,26 @@ const SignupFormControll = () => {
           </div>
         </div>
 
-           <div onClick={btnHadler} className={style.action}>
+        <div onClick={btnHadler} className={style.action}>
           <button ref={btnRef} className={style.button} type="submit">
             Sign Up
           </button>
         </div>
       </form>
       <InfoMessage error={error} />
+      <Snackbar
+        open={test}
+        autoHideDuration={3000}
+        onClose={() => setTest(null)}
+        anchorOrigin={{vertical:'top',horizontal:'center'}}
+      >
+        <Alert severity="success" onClose={() => setTest(null)}>
+        
+          <div className={style.mess}>{test}</div>
+        </Alert>
+      </Snackbar>
     </div>
-  )
-}
+  );
+};
 
-export default SignupFormControll
+export default SignupFormControll;
