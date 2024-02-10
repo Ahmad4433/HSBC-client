@@ -55,7 +55,7 @@ const LoginForm = () => {
               </div>
               <div className={style.titles}>
                 <p className={style.t1}>Welcome Back</p>
-                <p className={style.t2}>Login into your account</p>
+                <p className={style.t2}>Continue with</p>
               </div>
               <div className={style.alternative}>
                 <Alternative />
