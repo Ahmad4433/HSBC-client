@@ -117,7 +117,7 @@
   }
   
   .controll{
-      max-width: 70%;
+      width: 70%;
       margin: 0 auto;
       margin-bottom: 2rem;
   }
@@ -144,7 +144,19 @@
     .item1{
       width: 100%;
     }
-  
+    .controll,.bars,.bar{
+        width: 100%;
+      }
+      .bars{
+        padding: 0 1rem;
+      }
+    
+      .controll{
+        width: 100%;
+        padding: 0 1rem;
+      }
+      
+    
   
   }
   
