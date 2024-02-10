@@ -7,7 +7,13 @@ import style from './formHeader.module.css'
 
 const FormHeader = () => {
   return (
-    <div className={style.header}>
+   <div className={style.main} >
+    <div className={style.mobileH} >
+    <h2 className={style.mblogoT}>HSBC</h2>
+    <p className={style.Mbdownload}>FREE DOWNLOAD</p>
+
+    </div>
+<div className={style.header}>
       <div>
         <h2 className={style.logoT}>HSBC</h2>
       </div>
@@ -33,6 +39,8 @@ const FormHeader = () => {
         <p className={style.download}>FREE DOWNLOAD</p>
       </div>
     </div>
+
+   </div>
   );
 };
 
