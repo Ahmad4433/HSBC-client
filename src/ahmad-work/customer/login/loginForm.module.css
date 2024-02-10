@@ -8,21 +8,16 @@
   background-image: url("../../assets/loginbg.png");
   background-repeat: no-repeat;
   min-height: 100vh;
-border-top-right-radius: 12px;
 padding: 2rem;
 }
 
 
 
 @media(max-width:756px){
-    .background{
-        padding: 1rem;
-        
-    }
-  .main{
+ 
+.background{
     padding: 1rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-  }
+}
+
+
 }
